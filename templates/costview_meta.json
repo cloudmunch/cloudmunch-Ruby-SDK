@@ -1,0 +1,22 @@
+{
+"name":{"label": "Cost Performance", "color":"grey", "x":100, "y":10},
+"date":"12 April 2015",
+"source": "JIRA",
+
+"plots":{
+"cost_data":{
+"type":"line",
+"xaxis":{"label": "Sprints", "color":"black", "placement":"bottom","data":{"domain":{"factor":"1.5"}} } ,
+"yaxis":{"label": "In Millions (USD)", "color":"black", "placement":"left", "plots":["cost_data"], "data":{"domain":{"data":["100", "1000"]}} },
+"plots":{
+"x":["label"],
+"y":["Budget","Planned","Actual"],
+"ystart": "0",
+"Budget":{"color":"blue", "points":{} },
+"Planned":{"color":"green", "points":{} },
+"Actual":{"color":"red", "points":{} }
+}
+}
+},
+"dimensions":{"height":310, "width":400}
+}

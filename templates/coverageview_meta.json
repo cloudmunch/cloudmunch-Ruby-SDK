@@ -1,0 +1,34 @@
+{
+    "name":{"label": "Code Coverage", "color":"black", "x":120, "y":10},
+    "date":"12 April 2015",
+    "source": "JIRA",
+     "plots":{
+      "coverage_data":{
+        "type":"line",
+       "xaxis": {
+	    "label": "",
+	    "color": "black",
+	    "placement": "bottom",
+	    "data": {
+		"domain": {
+		    "factor": "1.5"
+		}
+	    }
+	},
+	"yaxis": {
+	    "label": "% Coverage",
+	    "color": "black",
+	    "placement": "left"
+	},
+	 "plots": {
+	    "x": [
+	    ],
+	    "y": [
+	    ],
+	    "ystart": "0"
+	}
+       }
+
+    },
+    "dimensions":{"width":400, "height":310}
+}

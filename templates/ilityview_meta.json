@@ -1,0 +1,66 @@
+{
+    "name": {
+      "label": "Ility Score Card1",
+      "color": "grey",
+      "x": 100,
+      "y": 10
+    },
+    "date": "30 April 2015",
+    "source": "XLS",
+    "plots": {
+      "ility_data": {
+        "type": "line",
+        "xaxis": {
+          "label": "Days",
+          "color": "black",
+          "placement": "bottom",
+          "data": {
+            "domain": {
+              "factor": "1.5"
+            }
+          }
+        },
+        "yaxis": {
+          "label": "PI-Score",
+          "color": "black",
+          "placement": "left",
+          "plots": [
+            "ility_data"
+          ],
+          "data": {
+            "domain": {
+              "data": [
+                "100",
+                "1000"
+              ]
+            }
+          }
+        },
+        "plots": {
+          "x": [
+            "label"
+          ],
+          "y": [
+            "PI-Score"
+          ],
+          "ystart": "0",
+          "Budget": {
+            "color": "blue",
+            "points": {}
+          },
+          "Planned": {
+            "color": "green",
+            "points": {}
+          },
+          "Actual": {
+            "color": "red",
+            "points": {}
+          }
+        }
+      }
+    },
+    "dimensions": {
+      "height": 310,
+      "width": 400
+    }
+  }

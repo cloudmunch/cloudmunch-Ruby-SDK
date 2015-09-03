@@ -1,0 +1,67 @@
+ {
+        "name": {
+            "label": "Defect Inflow/Burn",
+            "color": "grey",
+            "x": 90,
+            "y": 10
+        },
+        "date": "12 April 2015",
+        "source": "JIRA",
+        "plots": {
+            "io_data": {
+                "type": "line",
+                "xaxis": {
+                    "label": "Days",
+                    "color": "black",
+                    "placement": "bottom",
+                    "data": {
+                        "domain": {
+                            "factor": "1.5"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "label": "Number of Defects",
+                    "color": "black",
+                    "placement": "left",
+                    "plots": [
+                        "io_data"
+                    ],
+                    "data": {
+                        "domain": {
+                            "data": [
+                                "100",
+                                "1000"
+                            ]
+                        }
+                    }
+                },
+                "plots": {
+                    "x": [
+                        "label"
+                    ],
+                    "y": [
+                        "Inbound",
+                        "Outbound"
+                    ],
+                    "ystart": "0",
+                    "Budget": {
+                        "color": "blue",
+                        "points": {}
+                    },
+                    "Planned": {
+                        "color": "green",
+                        "points": {}
+                    },
+                    "Actual": {
+                        "color": "red",
+                        "points": {}
+                    }
+                }
+            }
+        },
+        "dimensions": {
+            "height": 310,
+            "width": 400
+        }
+    }

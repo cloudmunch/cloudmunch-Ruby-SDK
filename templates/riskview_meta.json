@@ -1,0 +1,19 @@
+ {
+    "name":{"label": "Risk", "color":"grey", "x":120, "y":10},
+    "date":"12 April 2015",
+    "source": "JIRA",
+    "plots":{
+      "risk_data":{
+        "type":"doughnut",
+        "plots":{
+          "sections":["Critical", "Warning", "Trivial"],
+          "Critical":{"color":"green"},
+          "Warning":{"color":"blue"},
+          "Trivial":{"color":"yellow"},
+          "x":"140",
+          "y":"120"
+        }
+      }
+    },
+    "dimensions":{"height":310, "width":400}
+  }
