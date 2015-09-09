@@ -6,7 +6,10 @@ require 'json'
 
 module Util
     def Util.logInit()
-        logger = logger.new(STDOUT)
+        logger = Logger.new(STDOUT)
+        logger.formatter = proc do |severity, datetime, progname, msg|
+             "#{severity}: #{msg}\n"
+        end
         return logger
     end
 
@@ -28,7 +31,7 @@ module Util
     end
 
     def Util.logIt(logger, log_level, log_level_string, messageString)   
-        case log_level       
+        case log_level.downcase       
         when "debug"
             if "warning".eql? log_level_string or "info".eql? log_level_string or "error".eql? log_level_string or "debug".eql? log_level_string                 
                 log(logger, "debug", messageString)
@@ -85,61 +88,12 @@ module Util
         fp.close
         return true
       rescue
-        log("DEBUG", "Could not open output file #{input_json['reporthtml']} Check that the files exists and you have permissions to open the file!")
+        puts("ERROR: Could not open output file. Framework error!")
         # exit 1
         return false
       end
    end
    
-   # def Util.getSortedSprints(server, endpoint, params)
-   #      sprints = []
-   #      sname_by_sequence = {}
-   #      tseq = []
-
-   #      newParam = {
-   #          :action => 'listcustomcontext',
-   #          :fields => 'sequence, sprint_id',
-   #          :group_by => 'sequence',
-   #          :count => '*'
-   #      }
-
-   #      newParam = params.merge(newParam)
-   #      cqlQuery = CloudmunchService.getDataContext(server, endpoint, newParam)
-   #      cqlQuery = JSON.parse(cqlQuery)
-   #      cqlQuery.each do |v|
-   #          # puts v[1]
-   #          tseq << v[1]['sequence'].to_i
-   #          sname_by_sequence[v[1]['sequence'].to_i] = v[1]['sprint_id']
-   #      end
-
-   #      tseq.sort!.each do |y|
-   #          sprints << sname_by_sequence[y]
-   #      end
-
-   #      return sprints
-   #  end
-
-   #  def Util.getActiveSprint(server, endpoint, params)
-   #      sprints = []
-
-   #      newParam = {
-   #          :action => "listcustomcontext",
-   #          :fields => "sprint_id,sprint_status",
-   #          :sort_by => "sprint_status",
-   #          :count => "*",
-   #      }
-
-   #      newParam = params.merge(newParam)
-   #      cqlQuery = CloudmunchService.getDataContext(server, endpoint, newParam)
-   #      cqlQuery = JSON.parse(cqlQuery)
-   #      sprint = nil
-   #      cqlQuery.each do |x|
-   #          if(x['sprint_status'] == 'ACTIVE')
-   #              sprint = x['sprint_id']
-   #          end
-   #      end
-   #      return sprint
-   # end
     def Util.getUrlForViewCards(server, endpoint, params)
         newParam = {
             :action => "listcustomcontext",
@@ -157,6 +111,10 @@ module Util
 
         return url
     end
+
+    def Util.getTemplate(template_name)
+      openJSONFile(File.dirname(__FILE__) +"/templates/#{template_name}.json")
+    end   
     
 end
 

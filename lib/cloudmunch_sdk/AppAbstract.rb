@@ -18,21 +18,16 @@ class AppAbstract
     end
 
 
-
-
-
-
-
     def logInit(log_level)
         @logger = @logger ? @logger : Util.logInit()
         @log_level = log_level
     end
 
     def log(level,logString)
-        if !@logger.nil?
+        if @logger.nil?
             logInit("DEBUG")
         end     
-        Util.logIt(@logger, @log_level, level, logString)
+        Util.logIt(@logger, @log_level, level.to_s.downcase, logString)
     end
 
 
@@ -91,35 +86,6 @@ class AppAbstract
     end
 
 
-#    def getActiveSprint(param)
-#        params = {
-#            "username" => @@config['username']
-#        }
-
-#        params = param.merge(params)
-#        Util.getActiveSprint(@@config['master_url'], @@config['endpoint'], params)
-#    end
-#
-#    def getSortedSprints(param)
-#        params = {
-#           "username" => @@config['username']
-#        }
-#
-#        params = param.merge(params)
-#
-#        Util.getSortedSprints(@@config['master_url'], @@config['endpoint'], params)
-#    end
-#
-#    def getUrlForViewCards(param)
-#        params = {
-#            "username" => @@config['username']
-#        }
-#
-#        params = param.merge(params)
-#
-#        Util.getUrlForViewCards(@@config['master_url'], @@config['endpoint'], params)
-#    end
-
     def getCMContext(context)
         begin
             return @@config[context+"_context"]
@@ -133,15 +99,16 @@ class AppAbstract
     end
 
     def initializeApp()
-        puts "initializeApp from AppAbstract"
+        #puts "initializeApp from AppAbstract"
     end
 
     def process()
-        puts "process func from AppAbstract"
+        #puts "process func from AppAbstract"
     end
 
     def cleanupApp()
-        puts "cleanupApp from AppAbstract"
+       log("INFO", "\nExiting app")
+       #puts "cleanupApp from AppAbstract"
     end
 
     def start()

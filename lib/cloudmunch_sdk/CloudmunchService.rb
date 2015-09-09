@@ -11,7 +11,7 @@ module CloudmunchService
 
    def self.putCustomDataContext(server, endpoint, param)
       result = self.http_post(server, endpoint, param)
-      p result.code.to_s 
+      #p result.code.to_s 
       if result.code.to_s == "200"
         return true 
       else
@@ -29,7 +29,7 @@ module CloudmunchService
        return Net::HTTP.get(server, path)
       else
          queryStr =  "#{path}?".concat(params.collect { |k,v| "#{k}=#{CGI::escape(v.to_s)}" }.join('&'))
-         log("DEBUG", "Calling URL " + server+queryStr)
+         puts ("SDKDEBUG: Calling URL " + server+queryStr)
          uri = URI(server + "/" + queryStr)
          return Net::HTTP.get(uri) 
       end
@@ -37,7 +37,7 @@ module CloudmunchService
    
    def self.http_post(server,path,params)
         queryStr =  "#{path}?".concat(params.collect { |k,v| "#{k}=#{CGI::escape(v.to_s)}" }.join('&'))
-        log("DEBUG", "Calling URL " + server+queryStr)
+        puts ("SDKDEBUG: Calling URL " + server+queryStr)
         if params.nil?
             return Net::HTTP.post(server, path)
         else
