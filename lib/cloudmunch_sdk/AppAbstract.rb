@@ -94,6 +94,14 @@ class AppAbstract
         end
     end
 
+    def getTemplate(template_name)
+        begin
+            Util.getTemplate(template_name)
+        rescue
+            return false
+        end
+    end   
+
     def load_config()
         @@config = openJSONFile(@@config_path)
     end

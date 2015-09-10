@@ -15,38 +15,42 @@ module Util
 
     def Util.log(logger, level, logString)
         case level
+        when "debug"
+            logger.debug(logString)
         when "fatal"
             logger.fatal(logString)
-        when "errror"
+        when "error"
             logger.error(logString)
         when "warn"
             logger.warn(logString)
         when "info"
-            logger.info(logString)
-        when "debug"
-            logger.debug(logString)
+            logger.info(logString)        
         else
             logger.unknown(logString)
         end
     end
 
-    def Util.logIt(logger, log_level, log_level_string, messageString)   
+  def Util.logIt(logger, log_level, log_level_string, messageString)   
         case log_level.downcase       
         when "debug"
-            if "warning".eql? log_level_string or "info".eql? log_level_string or "error".eql? log_level_string or "debug".eql? log_level_string                 
+            if "debug".eql? log_level_string or "fatal".eql? log_level_string or "error".eql? log_level_string or "warn".eql? log_level_string or "info".eql? log_level_string                 
                 log(logger, "debug", messageString)
             end
+        when "fatal"
+            if "fatal".eql? log_level_string
+                log(logger, "fatal", messageString)
+            end
         when "error"
-            if "warning".eql? log_level_string or "info".eql? log_level_string or "error".eql? log_level_string
+            if "error".eql? log_level_string
                 log(logger, "error", messageString)
-            end
-        when "info"
-            if "warning".eql? log_level_string or "info".eql? log_level_string
-                log(logger, "info", messageString)
-            end
+            end        
         when "warn"
             if "warn".eql? log_level_string
                 log(logger, "warn", messageString)
+            end
+        when "info"
+            if "info".eql? log_level_string
+                log(logger, "info", messageString)
             end
         else
             log(logger, "unknown", messageString)
