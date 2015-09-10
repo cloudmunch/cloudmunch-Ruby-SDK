@@ -5,7 +5,7 @@ require 'cloudmunch_sdk/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "cloudmunch_sdk"
-  spec.version       = "0.3.4"
+  spec.version       = "0.3.6"
   spec.authors       = ["syamk"]
   spec.email         = ["syamk@cloudmunch.com"]
 
