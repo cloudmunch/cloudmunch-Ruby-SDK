@@ -1,0 +1,109 @@
+{
+  "applocation": "ruby /var/cloudbox/CBApp/RubySDK_HelloWorld_plugin/src/RubySDK_HelloWorld_plugin.rb",
+  "apptype": "SHELL",
+  "outputLogPath": "RubySDK_HelloWorld_plugin.cloudbox",
+  "params": {  
+  "buildNo": "%buildnumber%",
+  "cloudproviders": "%cloudproviders%",
+  "domain": "%domain%",
+  "format":"insight",
+  "jobname": "%job%", 
+  "masterurl": "$_masterurl",
+  "project": "%project%",
+  "projectName": "%project%",
+  "userName": "$username$"
+   },  
+  "pattern": "-domain,-format,-jobname,-masterurl,-project,-projectName,-userName,-loader_jobname,-log_level,-greeting_param",
+  "version": "json",
+  "reportLocation": "cmtarget/RubySDK_HelloWorld_plugin",
+  "reportTool": "insight",
+  "reportpattern": "reporthtml",
+  "prefixpattern": {
+    "pattern": "logfile,reportxlsx,reporttar,reportgzip,reportgz,reportcsv,reporttxt,reportxml,reporthtml,reportxls,reportdflt,reportpdf",
+    "ext": "log,xlsx,tar,gzip,gz,csv,txt,xml,html,xls,dflt,pdf",
+    "reportingtool": "log,xlsx,tar,gzip,gz,csv,txt,xml,html,xls,dflt,pdf"
+  },
+  "sourcepattern": "nosource",
+  "display": {
+    "cb_thumbnail": "excellogo",
+    "Parameters": {
+      "loader_jobname":{
+        "label": "Jobname where the data loader for this project is running.",
+        "display": "yes",
+        "type": "text",
+        "validation_rules": [
+          {
+            "rule": "STRING",
+            "message": "",
+            "continue": false
+          }
+        ],
+        "defaultValue": "",
+        "hint": "System name of the job where the loader app for this pipeline is running"
+      },
+       "greeting_param": {
+        "label": "Greeting Message",
+        "display": "yes",
+        "type": "text",
+        "validation_rules": [
+          {
+            "rule": "STRING",
+            "message": "",
+            "continue": false
+          }
+        ],
+        "defaultValue": "",
+        "hint": "Hello, World!!!"
+      },
+      "log_level": {
+        "label": "Log level",
+        "display": "yes",
+        "type": "text",
+        "validation_rules": [
+          {
+            "rule": "STRING",
+            "message": "",
+            "continue": false
+          }
+        ],
+        "defaultValue": "INFO",
+        "hint": "DEBUG|WARNING|INFO|ERROR|FATAL"
+       },
+    },
+    "cm_appstatus": "enabled",
+    "description": "Reads Greeting Message and saves that into database",
+    "cm_developedby": "",
+    "cb_category": "BUILD|masternode",
+    "cb_displayName": "RubySDK HelloWorld Plugin",
+    "cb_appname": "RubySDK_HelloWorld_plugin",
+    "cb_raisedefectonstepfailure": "no",
+    "cb_abortonfailure": "no",
+    "cb_display": "yes",
+    "cb_execute": "yes",
+    "cb_order": "1",
+    "retry_on_failure": "no",
+    "retry_count": "1",
+    "wait_time_before_retry": "1"
+  },
+  "metadata": {
+    "type":["etl"],
+    "licensetype": "",
+    "tags": "BUILD|masternode",
+    "version": ""
+  },
+  "_type": "apps",
+  "_id": "RubySDK_HelloWorld_plugin",
+  "_copyright_info": "Copyright (C) CloudMunch.com - All Rights Reserved",
+  "_create_time": "2015-08-07 06:23:28.32049",
+  "_created_by": "ganesankrishnamurthi@cloudmunch.com",
+  "_update_time": "2015-09-09 06:23:28.32049",
+  "_updated_by": "ganesankrishnamurthi@cloudmunch.com",
+  "_number": "RubySDK_HelloWorld_plugin",
+  "id": "RubySDK_HelloWorld_plugin",
+  "name": "RubySDK_HelloWorld_plugin",
+  "build_dependencies":["bundler install"],
+  "test_dependencies":["vendor/bin/ruby test/RubySDK_HelloWorld_plugin_test.rb"],
+  "deploy_dependencies":["bundler install"],
+  "plugin_version":"v1.0",
+  "plugin_category":"Insight"
+}
