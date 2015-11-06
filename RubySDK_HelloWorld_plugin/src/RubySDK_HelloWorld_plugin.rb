@@ -15,6 +15,7 @@ class RubySDKHelloWorldPluginApp < AppAbstract
         appContext = getAppContext(json_input)
         @domain = appContext.get_data('domain')
         @project = appContext.get_data('project')
+        @greetingContext = "greeting"
         
         logInit(@log_level)
         log("info", "initializeApp is invoked in RubySDK_HelloWorld_plugin App")     
@@ -37,7 +38,7 @@ class RubySDKHelloWorldPluginApp < AppAbstract
             "domain" => @domain,
             "project" => @project,
             "job" => @jobname,
-            "context" => “greeting”,
+            "context" => @greetingContext,
             "id" => @id,
             "data" => message
         }
