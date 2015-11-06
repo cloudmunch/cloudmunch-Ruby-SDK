@@ -68,7 +68,7 @@
         ],
         "defaultValue": "INFO",
         "hint": "DEBUG|WARNING|INFO|ERROR|FATAL"
-       },
+       }
     },
     "cm_appstatus": "enabled",
     "description": "Reads Greeting Message and saves that into database",
