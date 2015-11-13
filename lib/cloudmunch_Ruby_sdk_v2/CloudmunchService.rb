@@ -13,38 +13,46 @@ module CloudmunchService
   end
 
    def updateCloudmunchData(context,contextid,data)
-    querystring=""
-    if filterdata.nil? || filterdata.empty?
-      
-    else
-      querystring="filter="+to_json($filerdata);
-    end
+    
     serverurl=applicationContext.get("{master_url}")+"/applications/"+applicationContext.get("{application}")+"/"+$context+"/"+$contextid;
-     return Net::HTTP.get($serverurl, data)
+     uri = URI.parse(serverurl)
+    
+     response= Net::HTTP.post_form(uri,"data" => data12.to_json)
+     
+     return response.body
    end
 
-   def getCloudmunchData(context,contextid)
+
+
+   def getCloudmunchData(context,contextid,filterdata)
+    if contextid.nil? || contextid.empty?
+     serverurl=applicationContext.get("{master_url}")+"/applications/"+applicationContext.get("{application}")+"/"+$context
+     else
      serverurl=applicationContext.get("{master_url}")+"/applications/"+applicationContext.get("{application}")+"/"+$context+"/"+$contextid;
+    end
     querystring=""
     if filterdata.nil? || filterdata.empty?
       serverurl=serverurl+"?apikey=".$applicationContext.get("{api_key}")
     else
       querystring="filter="+to_json($filerdata);
       serverurl=serverurl+"?"+querystring+"&apikey=".$applicationContext.get("{api_key}")
-    end
-   
     
-     return Net::HTTP.get($serverurl)
+    end
+   uri = URI.parse(serverurl)
+    
+     return Net::HTTP.get(uri)
    end
 
-   def getCloudmunchData(context,contextid,filterdata)
-   end
-
-   def addCloudmunchData(context)
-   end
-
+   
    def deleteCloudmunchData(context,contextid)
+    serverurl=applicationContext.get("{master_url}")+"/applications/"+applicationContext.get("{application}")+"/"+$context+"/"+$contextid;
+    uri = URI.parse(serverurl)
+    Net::HTTP::Delete(uri)
    end 
+
+
+
+
    def self.putCustomDataContext(server, endpoint, param)
       result = self.http_post(server, endpoint, param)
       #p result.code.to_s 
