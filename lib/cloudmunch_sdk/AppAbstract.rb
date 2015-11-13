@@ -36,8 +36,28 @@ class AppAbstract
     end
 
     def getJSONArgs()
-        @json_input = Util.getJSONArgs()
+      jsonin = nil
+      varin=nil
+      integration=nil
+      loop { case ARGV[0]
+          when '-jsoninput' then  ARGV.shift; jsonin = ARGV.shift
+          when '-variables' then  ARGV.shift; varin = ARGV.shift
+          when '-integrations' then  ARGV.shift; integrations = ARGV.shift
+
+          when /^-/ then  usage("Unknown option: #{ARGV[0].inspect}")
+          else break
+      end; }
+        @json_input = JSON.load(jsonin)
+        @var_input =JSON.load(varin)
+        @integration_input=JSON.load(integrations)
+        createAppContext(json_input);
     end
+
+    def createAppContext()
+        @appContext = getAppContext(var_input)
+    end
+
+    
 
     def openJSONFile(fileNameWithPath)
         Util.openJSONFile(fileNameWithPath)
@@ -47,10 +67,10 @@ class AppAbstract
         Util.generateReport(reportFilename, reportString)
     end
     
-    def getServiceProvider(param = nil)
-        @json_input = @json_input ? @json_input : getJSONArgs()
+    def getIntegrationDetails(param = nil)
+        #@json_input = @json_input ? @json_input : getJSONArgs()
         serviceProvider = ServiceProvider.new(@json_input["providername"])
-        serviceProvider.load_data(@json_input)
+        serviceProvider.load_data(integration_input)
         return serviceProvider
     end
     
