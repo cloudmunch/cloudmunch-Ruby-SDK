@@ -8,7 +8,7 @@ class ServiceProvider
 
     def load_data(param)
     	
-    	$integrations->$provname->$conf
+    	
         @SP_data = JSON.parse(param[@providername])["configuration"]
     end     
 

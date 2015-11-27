@@ -38,7 +38,7 @@ class AppAbstract
     def getJSONArgs()
       jsonin = nil
       varin=nil
-      integration=nil
+      integrations=nil
       loop { case ARGV[0]
           when '-jsoninput' then  ARGV.shift; jsonin = ARGV.shift
           when '-variables' then  ARGV.shift; varin = ARGV.shift
@@ -50,15 +50,20 @@ class AppAbstract
         @json_input = JSON.load(jsonin)
         @var_input =JSON.load(varin)
         @integration_input=JSON.load(integrations)
-        createAppContext(json_input);
+        createAppContext();
+        return @json_input
     end
 
     def createAppContext()
-        @appContext = getAppContext(var_input)
+
+        @appContext = AppContext.new(@var_input)
+        
     end
 
-    
-
+    def getCloudmunchService()
+         @cloudmunchservice = @cloudmunchservice ? @cloudmunchservice : CloudmunchService.new(@var_input)
+        return @cloudmunchservice
+    end 
     def openJSONFile(fileNameWithPath)
         Util.openJSONFile(fileNameWithPath)
     end
@@ -70,14 +75,13 @@ class AppAbstract
     def getIntegrationDetails(param = nil)
         #@json_input = @json_input ? @json_input : getJSONArgs()
         serviceProvider = ServiceProvider.new(@json_input["providername"])
-        serviceProvider.load_data(integration_input)
+        serviceProvider.load_data(@integration_input)
         return serviceProvider
     end
     
-    def getAppContext(param = nil)
-        @json_input = @json_input ? @json_input : getJSONArgs()
-        appContext = AppContext.new(@json_input)
-        return appContext
+    def getAppContext(var_input)
+        
+        return @appContext
     end
 
     def getDataContextFromCMDB(param)

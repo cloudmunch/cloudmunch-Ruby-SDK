@@ -14,10 +14,11 @@ module CloudmunchService
 
    def updateCloudmunchData(context,contextid,data)
     
-    serverurl=applicationContext.get("{master_url}")+"/applications/"+applicationContext.get("{application}")+"/"+$context+"/"+$contextid;
+    serverurl=@applicationContext.get_data("{master_url}")+"/applications/"+@applicationContext.get_data("{application}")+"/"+context+"/"+contextid;
+    serverurl=serverurl+"?apikey=".@applicationContext.get_data("{api_key}")
      uri = URI.parse(serverurl)
     
-     response= Net::HTTP.post_form(uri,"data" => data12.to_json)
+     response= Net::HTTP.post_form(uri,"data" => data.to_json)
      
      return response.body
    end
@@ -26,16 +27,16 @@ module CloudmunchService
 
    def getCloudmunchData(context,contextid,filterdata)
     if contextid.nil? || contextid.empty?
-     serverurl=applicationContext.get("{master_url}")+"/applications/"+applicationContext.get("{application}")+"/"+$context
+     serverurl=@applicationContext.get_data("{master_url}")+"/applications/"+@applicationContext.get_data("{application}")+"/"+context
      else
-     serverurl=applicationContext.get("{master_url}")+"/applications/"+applicationContext.get("{application}")+"/"+$context+"/"+$contextid;
+     serverurl=@applicationContext.get_data("{master_url}")+"/applications/"+@applicationContext.get_data("{application}")+"/"+context+"/"+contextid;
     end
     querystring=""
     if filterdata.nil? || filterdata.empty?
-      serverurl=serverurl+"?apikey=".$applicationContext.get("{api_key}")
+      serverurl=serverurl+"?apikey=".@applicationContext.get_data("{api_key}")
     else
       querystring="filter="+to_json($filerdata);
-      serverurl=serverurl+"?"+querystring+"&apikey=".$applicationContext.get("{api_key}")
+      serverurl=serverurl+"?"+querystring+"&apikey=".@applicationContext.get_data("{api_key}")
     
     end
    uri = URI.parse(serverurl)
@@ -45,7 +46,8 @@ module CloudmunchService
 
    
    def deleteCloudmunchData(context,contextid)
-    serverurl=applicationContext.get("{master_url}")+"/applications/"+applicationContext.get("{application}")+"/"+$context+"/"+$contextid;
+    serverurl=@applicationContext.get_data("{master_url}")+"/applications/"+@applicationContext.get_data("{application}")+"/"+context+"/"+contextid;
+   serverurl=serverurl+"?apikey=".@applicationContext.get_data("{api_key}")
     uri = URI.parse(serverurl)
     Net::HTTP::Delete(uri)
    end 
