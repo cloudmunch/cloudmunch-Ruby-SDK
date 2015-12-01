@@ -7,7 +7,9 @@ class ServiceProvider
     end
 
     def load_data(param)
-        @SP_data = JSON.parse(param["cloudproviders"])[@providername]
+    	
+    	
+        @SP_data = JSON.parse(param[@providername])["configuration"]
     end     
 
     def get_data(keyname)

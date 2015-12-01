@@ -8,13 +8,11 @@ class RubySDKHelloWorldPluginApp < AppAbstract
     def initializeApp()
         json_input = getJSONArgs()
 
-        @jobname = json_input['loader_jobname']
-        @greeting_param = json_input['greeting_param']
+       # @jobname = json_input['loader_jobname']
+        @greeting_message = json_input['greeting_param']
         @log_level = json_input['log_level'] 
 
-        appContext = getAppContext(json_input)
-        @domain = appContext.get_data('domain')
-        @project = appContext.get_data('project')
+        
         @greetingContext = "greeting"
         
         logInit(@log_level)
@@ -23,7 +21,8 @@ class RubySDKHelloWorldPluginApp < AppAbstract
 
     def process()
         log("info", "process is invoked in RubySDK_HelloWorld_plugin App")
-        saveGreetingMessage(@greeting_param.to_json)
+        #saveGreetingMessage(@greeting_param.to_json)
+        log("info","Hello "+ @greeting_message )
     end  
 
     def saveGreetingMessage(message)
@@ -31,19 +30,16 @@ class RubySDKHelloWorldPluginApp < AppAbstract
         log("debug", message)
         # the result_array needs to be stored into CMDB
         # updateCustomContext()
-        @id = "messageid"
+       # @id = "messageid"
         log("info", "Updating cmdb with exceldata: id:"+@id) 
-
+       
         data_pack = {
-            "domain" => @domain,
-            "project" => @project,
-            "job" => @jobname,
-            "context" => @greetingContext,
-            "id" => @id,
+            
             "data" => message
         }
         #pass the filled in hash object to the following method
-        updateDataContextToCMDB(data_pack)  
+         cms= getCloudmunchService()
+        cms.updateCloudmunchData(@greetingContext,@id,data_pack) 
     end 
 
     def cleanupApp()

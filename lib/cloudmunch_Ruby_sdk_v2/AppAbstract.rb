@@ -36,9 +36,34 @@ class AppAbstract
     end
 
     def getJSONArgs()
-        @json_input = Util.getJSONArgs()
+      jsonin = nil
+      varin=nil
+      integrations=nil
+      loop { case ARGV[0]
+          when '-jsoninput' then  ARGV.shift; jsonin = ARGV.shift
+          when '-variables' then  ARGV.shift; varin = ARGV.shift
+          when '-integrations' then  ARGV.shift; integrations = ARGV.shift
+
+          when /^-/ then  usage("Unknown option: #{ARGV[0].inspect}")
+          else break
+      end; }
+        @json_input = JSON.load(jsonin)
+        @var_input =JSON.load(varin)
+        @integration_input=JSON.load(integrations)
+        createAppContext();
+        return @json_input
     end
 
+    def createAppContext()
+
+        @appContext = AppContext.new(@var_input)
+        
+    end
+
+    def getCloudmunchService()
+         @cloudmunchservice = @cloudmunchservice ? @cloudmunchservice : CloudmunchService.new(@var_input)
+        return @cloudmunchservice
+    end 
     def openJSONFile(fileNameWithPath)
         Util.openJSONFile(fileNameWithPath)
     end
@@ -47,17 +72,16 @@ class AppAbstract
         Util.generateReport(reportFilename, reportString)
     end
     
-    def getServiceProvider(param = nil)
-        @json_input = @json_input ? @json_input : getJSONArgs()
+    def getIntegrationDetails(param = nil)
+        #@json_input = @json_input ? @json_input : getJSONArgs()
         serviceProvider = ServiceProvider.new(@json_input["providername"])
-        serviceProvider.load_data(@json_input)
+        serviceProvider.load_data(@integration_input)
         return serviceProvider
     end
     
-    def getAppContext(param = nil)
-        @json_input = @json_input ? @json_input : getJSONArgs()
-        appContext = AppContext.new(@json_input)
-        return appContext
+    def getAppContext(var_input)
+        
+        return @appContext
     end
 
     def getDataContextFromCMDB(param)

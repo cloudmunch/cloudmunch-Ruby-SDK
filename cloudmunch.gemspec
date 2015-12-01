@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cloudmunch_sdk/version'
+require 'cloudmunch_Ruby_sdk_v2/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "cloudmunch_sdk"
-  spec.version       = "0.3.6"
-  spec.authors       = ["syamk"]
-  spec.email         = ["syamk@cloudmunch.com"]
+  spec.name          = "cloudmunch_Ruby_sdk_v2"
+  spec.version       = "0.5.0"
+  spec.authors       = ["syamk","rosmi"]
+  spec.email         = ["rosmi@cloudmunch.com"]
 
   spec.summary       = %q{Cloudmunch Ruby SDK.}
   spec.description   = %q{Cloudmunch Ruby SDK to build plugins for cloudmunch platform.}
-  spec.homepage      = "https://rubygems.org/gems/cloudmunch_sdk"
+  spec.homepage      = "https://rubygems.org/gems/cloudmunch_Ruby_sdk_v2"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
