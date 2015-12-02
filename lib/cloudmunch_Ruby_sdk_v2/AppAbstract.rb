@@ -10,7 +10,7 @@ class AppAbstract
     include CloudmunchService
     include Util
 
-    @@config_path = ENV["SDK_CONFIG_PATH"]+"/sdk_config.json"
+    #@@config_path = ENV["SDK_CONFIG_PATH"]+"/sdk_config.json"
     @@config = nil
 
     def initialize(param = nil)
