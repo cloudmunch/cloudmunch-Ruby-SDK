@@ -144,7 +144,8 @@ class AppAbstract
     end
 
     def start()
-        load_config()
+        # load_config is commented out as this config file is not required now
+        #load_config()
         initializeApp()
         process()
         cleanupApp()
