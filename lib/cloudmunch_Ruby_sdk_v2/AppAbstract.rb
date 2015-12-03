@@ -61,7 +61,8 @@ class AppAbstract
     end
 
     def getCloudmunchService()
-         @cloudmunchservice = @cloudmunchservice ? @cloudmunchservice : CloudmunchService.new(@var_input)
+        # @cloudmunchservice = @cloudmunchservice ? @cloudmunchservice : CloudmunchService.new(@var_input)
+        @cloudmunchservice = @cloudmunchservice ? @cloudmunchservice : CloudmunchService.initialize(@appContext)
         return @cloudmunchservice
     end 
     def openJSONFile(fileNameWithPath)
