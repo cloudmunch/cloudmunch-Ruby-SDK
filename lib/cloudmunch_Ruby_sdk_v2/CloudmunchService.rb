@@ -8,7 +8,7 @@ require_relative "Util"
 
 module CloudmunchService
   include Util
-  def initialize(appcontext)
+  def self.initialize(appcontext)
    @applicationContext=appcontext
   end
 
