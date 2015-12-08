@@ -55,9 +55,7 @@ class AppAbstract
     end
 
     def createAppContext()
-
         @appContext = AppContext.new(@var_input)
-        
     end
 
     def getCloudmunchService()
@@ -80,8 +78,7 @@ class AppAbstract
         return serviceProvider
     end
     
-    def getAppContext(var_input)
-        
+    def getAppContext()        
         return @appContext
     end
 
