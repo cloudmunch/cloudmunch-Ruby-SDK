@@ -12,7 +12,7 @@ class RubySDKHelloWorldLoaderV1App < AppAbstract
 
         @greetingFrom = json_input['greeting_from']
         @greetingTo = json_input['greeting_to']
-        @greeting_message = json_input['greeting_message']
+        @greetingMessage = json_input['greeting_message']
         @greetingTime = Time.now.strftime("%H:%M:%S")
 
         @log_level = json_input['log_level'] 
@@ -22,21 +22,27 @@ class RubySDKHelloWorldLoaderV1App < AppAbstract
         @project = appContext.get_data('project')
         @greetingContext = "greeting"
 
-        @greetingParam = Hash.new 
-        @greetingParam["message"] = @greetingMessage
-        @greetingParam["from"] = @greetingFrom
-        @greetingParam["to"] = @greetingTo
-        @greetingParam["time"] = @greetingTime
-
-        puts @greetingParam.to_json.to_s
+        
   
         logInit(@log_level)
-        log("info", "initializeApp is invoked in RubySDKHelloWorldLoaderV1 App")     
+        log("info", "initializeApp is invoked in RubySDKHelloWorldLoaderV1 App")
+
     end
 
     def process()
         log("info", "process is invoked in RubySDKHelloWorldLoaderV1 App")
-        saveGreetingMessage(@greetingParam.to_json)
+
+        greetingParam = Hash.new 
+        greetingParam["message"] = @greetingMessage
+        greetingParam["from"] = @greetingFrom
+        greetingParam["to"] = @greetingTo
+        greetingParam["time"] = @greetingTime
+
+        finalDataFormat = {}
+        finalDataFormat["result"] = greetingParam.to_json
+
+        log("debug", finalDataFormat.to_json)
+        saveGreetingMessage(finalDataFormat.to_json)
     end  
 
     def saveGreetingMessage(message)
@@ -55,7 +61,8 @@ class RubySDKHelloWorldLoaderV1App < AppAbstract
             "data" => message
         }
         #pass the filled in hash object to the following method
-        updateDataContextToCMDB(data_pack)  
+        updateDataContextToCMDB(data_pack) 
+        log("info", "Updated cmdb with greeting message: id:"+@id)  
     end 
 
     def cleanupApp()

@@ -102,7 +102,7 @@
     "description": "Loads a greeting message into CMDB V1.",
     "cm_developedby": "",
     "cb_category": "BUILD|masternode",
-    "cb_displayName": "Insights Github Enterprise License Usage Status View",
+    "cb_displayName": "RubySDK HelloWorld Loader V1",
     "cb_appname": "RubySDK_HelloWorld_Loader_V1",
     "cb_raisedefectonstepfailure": "no",
     "cb_abortonfailure": "no",

@@ -78,9 +78,9 @@ class RubySDKHelloWorldReporterV1App < AppAbstract
         viewcard_meta_info["viewcardType"] = "kanban"
         viewcard_meta_info["viewcardTitle"] = @viewcardTitle
         viewcard_meta_info["viewcardLabelColor"] = "grey"
-        viewcard_meta_info["viewcardDataSource"] = "GitHub"
+        viewcard_meta_info["viewcardDataSource"] = "CMDB"
         viewcard_meta_info["viewcardXAxisLabel"] = ""
-        viewcard_meta_info["viewcardYAxisLabel"] = "Repositories"
+        viewcard_meta_info["viewcardYAxisLabel"] = ""
         viewcard_meta_info["viewcardXAxisColor"] = "black"
         viewcard_meta_info["viewcardYAxisColor"] = "black"
 
@@ -122,5 +122,5 @@ class RubySDKHelloWorldReporterV1App < AppAbstract
 
 end
 
-helloWorldReporterView = RubySDKHelloWorldReporterApp.new()
-helloWorldReporterView.start()
+helloWorldReporterV1View = RubySDKHelloWorldReporterV1App.new()
+helloWorldReporterV1View.start()

@@ -74,7 +74,7 @@
     "description": "Creates an insight report for Greeting Message V1.",
     "cm_developedby": "",
     "cb_category": "BUILD|masternode",
-    "cb_displayName": "Insights Github Enterprise License Usage Status View",
+    "cb_displayName": "RubySDK HelloWorld Reporter V1",
     "cb_appname": "RubySDK_HelloWorld_Reporter_V1",
     "cb_raisedefectonstepfailure": "no",
     "cb_abortonfailure": "no",
