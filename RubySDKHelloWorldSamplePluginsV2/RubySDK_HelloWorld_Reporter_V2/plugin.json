@@ -1,0 +1,66 @@
+{
+  "id": "RubySDK_HelloWorld_Reporter_V2",
+  "name": "Ruby SDK HelloWorld Sample Plugin Reporter Ver 2",
+  "author": "Ganesan",
+  "version": "1",
+  "status": "enabled",
+  "tags": [
+    "insights",
+    "greeting",
+    "rubysdk",
+    "sampleplugin"
+  ],
+  "inputs": {
+    "insight_id": {
+        "label": "Insight Name",
+        "display": "yes",
+        "type": "dropdown",
+        "resource": {
+          "url": "applications/{application_id}/insights"
+        },
+        "mandatory": true,
+        "defaultValue": "",
+        "hint": "Select the insight name under which data needs to be loaded"
+     },
+     "viewcard_title": {
+        "label": "Title of Insight Viewcard",
+        "display": "yes",
+        "type": "text",
+        "validation_rules": [
+          {
+            "rule": "STRING",
+            "message": "",
+            "continue": false
+          }
+        ],
+        "defaultValue": "Greeting Viewcard",
+        "hint": "Viewcard Title Name"
+       },
+      "log_level": {
+        "label": "Log level",
+        "display": "yes",
+        "type": "text",
+        "validation_rules": [
+          {
+            "rule": "STRING",
+            "message": "",
+            "continue": false
+          }
+        ],
+        "defaultValue": "INFO",
+        "hint": "DEBUG|WARNING|INFO|ERROR|FATAL"
+       }
+  },
+  "execute": {
+    "main": "RubySDK_HelloWorld_Reporter_V2/src/RubySDK_HelloWorld_Reporter_V2.rb",
+    "language": "ruby",
+    "options": ""
+  },
+  "documentation": {
+    "description": "Renders greeting message in an Insight viewcard."
+  },
+  "_created_by": "ganesan@cloudmunch.com",
+  "_create_time": "2015-12-30 06:23:25.0474",
+  "_updated_by": "ganesan@cloudmunch.com",
+  "_update_time": ""
+}

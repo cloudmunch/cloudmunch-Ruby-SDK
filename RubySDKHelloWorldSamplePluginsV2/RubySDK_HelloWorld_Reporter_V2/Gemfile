@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem 'cloudmunch_sdk', '1.0.0'
+gem 'test-unit'
+gem 'simplecov', :require => false, :group => :test
+
