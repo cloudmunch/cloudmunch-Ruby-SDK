@@ -61,11 +61,6 @@ module Util
         logger.close
     end
 
-
-   def Util.getJSONArgsTEMP(jsonString)
-      JSON.parse(jsonString)
-   end
-
    def Util.getJSONArgs()
       jsonin = nil
       loop { case ARGV[0]
@@ -85,40 +80,40 @@ module Util
       end
    end
    
-   def Util.generateReport(reportFileName, reportContent)
-      begin
-        fp=File.new(reportFileName, 'w')
-        fp.write(reportContent)
-        fp.close
-        return true
-      rescue
-        puts("ERROR: Could not open output file. Framework error!")
-        # exit 1
-        return false
-      end
-   end
+   # def Util.generateReport(reportFileName, reportContent)
+   #    begin
+   #      fp=File.new(reportFileName, 'w')
+   #      fp.write(reportContent)
+   #      fp.close
+   #      return true
+   #    rescue
+   #      puts("ERROR: Could not open output file. Framework error!")
+   #      # exit 1
+   #      return false
+   #    end
+   # end
    
-    def Util.getUrlForViewCards(server, endpoint, params)
-        newParam = {
-            :action => "listcustomcontext",
-            :fields => "*",
-        }
+   #  def Util.getUrlForViewCards(server, endpoint, params)
+   #      newParam = {
+   #          :action => "listcustomcontext",
+   #          :fields => "*",
+   #      }
 
-        newParam = params.merge(newParam)
-        cqlQuery = CloudmunchService.getDataContext(server, endpoint, newParam)
-        cqlQuery = JSON.parse(cqlQuery)
-        if !cqlQuery[0].nil? && !cqlQuery[0]["url"].nil?
-            url = cqlQuery[0]["url"]
-        else
-            url = ""
-        end
+   #      newParam = params.merge(newParam)
+   #      cqlQuery = CloudmunchService.getDataContext(server, endpoint, newParam)
+   #      cqlQuery = JSON.parse(cqlQuery)
+   #      if !cqlQuery[0].nil? && !cqlQuery[0]["url"].nil?
+   #          url = cqlQuery[0]["url"]
+   #      else
+   #          url = ""
+   #      end
 
-        return url
-    end
+   #      return url
+   #  end
 
-    def Util.getTemplate(template_name)
-      openJSONFile(File.dirname(__FILE__) +"/templates/#{template_name}.json")
-    end   
+   #  def Util.getTemplate(template_name)
+   #    openJSONFile(File.dirname(__FILE__) +"/templates/#{template_name}.json")
+   #  end   
     
 end
 

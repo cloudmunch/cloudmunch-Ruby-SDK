@@ -7,13 +7,19 @@ class ServiceProvider
     end
 
     def load_data(param)
-    	
-    	
-        @SP_data = JSON.parse(param[@providername])["configuration"]
+    	if param[@providername].nil?
+    		return nil
+    	else
+    		@SP_data = param[@providername]["configuration"]
+        end
     end     
 
     def get_data(keyname)
-        @SP_data[keyname] 
+        if @SP_data.nil?
+    		return nil
+    	else
+	        @SP_data[keyname] 
+        end
     end     
 
 end

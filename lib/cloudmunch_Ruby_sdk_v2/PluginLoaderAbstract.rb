@@ -2,20 +2,19 @@
 $LOAD_PATH << '.'
 
 require_relative "CloudmunchService"
-require_relative "InsightHelper"
 require_relative "Util"
 require_relative "ServiceProvider"
 require_relative "AppContext"
 
 class AppAbstract
     include CloudmunchService
-    include InsightHelper
     include Util
 
     @@config = nil
 
     def initialize(param = nil)
     end
+
 
     def logInit(log_level)
         @logger = @logger ? @logger : Util.logInit()
@@ -61,23 +60,18 @@ class AppAbstract
         return @appContext
     end
 
-    # def getCloudmunchContext(context)
-    #     begin
-    #         return @@config[context+"_context"]
-    #     rescue
-    #         return false
-    #     end
-    # end
+    def getCloudmunchContext(context)
+        begin
+            return @@config[context+"_context"]
+        rescue
+            return false
+        end
+    end
 
     def getCloudmunchService()
         @cloudmunchservice = self.extend(CloudmunchService)
         return @cloudmunchservice
-    end
-
-    def getInsightHelper()
-        @insightHelper = self.extend(InsightHelper)
-        return @insightHelper
-    end 
+    end    
     
     def getIntegrationDetails(param = nil)
         serviceProvider = ServiceProvider.new(@json_input["providername"])
