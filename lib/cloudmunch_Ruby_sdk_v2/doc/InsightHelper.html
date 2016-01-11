@@ -1,0 +1,2889 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: InsightHelper
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!InsightHelper.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (I)</a> &raquo;
+    
+    
+    <span class="title">InsightHelper</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Module: InsightHelper
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+      <dt class="r1">Includes:</dt>
+      <dd class="r1"><span class='object_link'><a href="Util.html" title="Util (module)">Util</a></span></dd>
+      
+    
+  
+  
+    <dt class="r2">Included in:</dt>
+    <dd class="r2"><span class='object_link'><a href="AppAbstract.html" title="AppAbstract (class)">AppAbstract</a></span></dd>
+    
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">InsightHelper.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createInsight-instance_method" title="#createInsight (instance method)">- (Object) <strong>createInsight</strong>(insightName) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>createInsight(insightName) Creates An Insight space in Server Workspace
+Needed in Loader plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createInsightDataStore-instance_method" title="#createInsightDataStore (instance method)">- (Object) <strong>createInsightDataStore</strong>(insightID, dataStoreName) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>createInsightDataStore(insightID, dataStoreName) Creates An Insight
+DataStore in Server Workspace Needed in Loader plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createInsightDataStoreExtract-instance_method" title="#createInsightDataStoreExtract (instance method)">- (Object) <strong>createInsightDataStoreExtract</strong>(insightID, dataStoreID, extractName) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>createInsightDataStoreExtract(insightID, dataStoreID, extractName) Creates
+An Insight DataStore Extract in Server Workspace Needed In Loader Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createInsightReport-instance_method" title="#createInsightReport (instance method)">- (Object) <strong>createInsightReport</strong>(insightID, reportName) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>createInsightReport(insightID, reportName) Creates An Insight Report in
+Server Workspace Needed In Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createInsightReportCard-instance_method" title="#createInsightReportCard (instance method)">- (Object) <strong>createInsightReportCard</strong>(insightID, reportID, cardName) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>createInsightReportCard(insightID, reportID, cardName) Creates An Insight
+Report Card in Server Workspace Needed In Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createInsightReportKeyMetric-instance_method" title="#createInsightReportKeyMetric (instance method)">- (Object) <strong>createInsightReportKeyMetric</strong>(insightID, reportID, keyMetricName) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>createInsightReportKeyMetric(insightID, reportID, keyMetricName) Creates An
+Insight Report Key Metric in Server Workspace Needed In Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getDataStoreID-instance_method" title="#getDataStoreID (instance method)">- (Object) <strong>getDataStoreID</strong>(insightID, dataStoreName) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getDataStoreID(insightID, dataStoreName) Gets DataStore ID for a given
+DataStore.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getExtractID-instance_method" title="#getExtractID (instance method)">- (Object) <strong>getExtractID</strong>(insightID, dataStoreID, extractName) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getExtractID(insightID, dataStoreID, extractName) Gets Extract ID for a
+given extract in a DataStore.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getInsightDataStoreExtracts-instance_method" title="#getInsightDataStoreExtracts (instance method)">- (Object) <strong>getInsightDataStoreExtracts</strong>(paramHash) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getInsightDataStoreExtracts(paramHash) Get Insight DataStore Extracts from
+Server Workspace Needed In Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getInsightDataStores-instance_method" title="#getInsightDataStores (instance method)">- (Object) <strong>getInsightDataStores</strong>(paramHash) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getInsightDataStores(paramHash) Get Insight DataStores from Server
+Workspace Needed In Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getInsightReportCards-instance_method" title="#getInsightReportCards (instance method)">- (Object) <strong>getInsightReportCards</strong>(paramHash) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getInsightReportCards(paramHash) Get Insight Report Cards from Server
+Workspace Needed In Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getInsightReportDataTemplateHash-instance_method" title="#getInsightReportDataTemplateHash (instance method)">- (Object) <strong>getInsightReportDataTemplateHash</strong>(reportTypeStr) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getInsightReportDataTemplateHash(reportTypeStr) Gets the data template Hash
+that needs to be filled in for a given report type Needed In Reporter
+Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getInsightReportKeyMetrics-instance_method" title="#getInsightReportKeyMetrics (instance method)">- (Object) <strong>getInsightReportKeyMetrics</strong>(paramHash) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getInsightReportKeyMetrics(paramHash) Get Insight Report Key Metrics from
+Server Workspace Needed In Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getInsightReportMetaTemplateHash-instance_method" title="#getInsightReportMetaTemplateHash (instance method)">- (Object) <strong>getInsightReportMetaTemplateHash</strong>(reportTypeStr) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getInsightReportMetaTemplateHash(reportTypeStr) Gets the meta template Hash
+that needs to be filled in for a given report type Needed In Reporter
+Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getInsightReports-instance_method" title="#getInsightReports (instance method)">- (Object) <strong>getInsightReports</strong>(paramHash) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getInsightReports(paramHash) Get Insight Reports from Server Workspace
+Needed In Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getInsightReportVisualizationMapTemplateHash-instance_method" title="#getInsightReportVisualizationMapTemplateHash (instance method)">- (Object) <strong>getInsightReportVisualizationMapTemplateHash</strong>(reportTypeStr) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getInsightReportVisualizationMapTemplateHash(reportTypeStr) Gets the
+visualization map template Hash that needs to be filled in for a given
+report type Needed In Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getInsights-instance_method" title="#getInsights (instance method)">- (Object) <strong>getInsights</strong>(paramHash) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getInsights(paramHash) Get Insights from Server Workspace Needed In
+Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getKeyMetricID-instance_method" title="#getKeyMetricID (instance method)">- (Object) <strong>getKeyMetricID</strong>(insightID, reportID, keyMetricName) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getKeyMetricID(insightID, reportID, keyMetricName) Gets Key Metric ID for a
+given report card.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getListOfDatesForADuration-instance_method" title="#getListOfDatesForADuration (instance method)">- (Object) <strong>getListOfDatesForADuration</strong>(durationUnitNameStr, durationUnitNumber) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getListOfDatesForADuration(durationUnitNameStr, durationUnitNumber)
+durationUnitNameStr : days | weeks | months durationUnitNumber : Eg.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getReportCardID-instance_method" title="#getReportCardID (instance method)">- (Object) <strong>getReportCardID</strong>(insightID, reportID, cardName) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getReportCardID(insightID, reportID, cardName) Gets Report Card ID for a
+given report card.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getReportID-instance_method" title="#getReportID (instance method)">- (Object) <strong>getReportID</strong>(insightID, reportName) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>getReportID(insightID, reportName) Gets Report ID for a given report.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#updateInsight-instance_method" title="#updateInsight (instance method)">- (Object) <strong>updateInsight</strong>(insightID, data) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>updateInsight(insightID, data) Updates Insight Into Server Workspace Needed
+In Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#updateInsightDataStore-instance_method" title="#updateInsightDataStore (instance method)">- (Object) <strong>updateInsightDataStore</strong>(insightID, dataStoreID, data) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>updateInsightDataStore(insightID, dataStoreID, data) Updates Insight
+DataStore Into Server Workspace Needed In Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#updateInsightDataStoreExtract-instance_method" title="#updateInsightDataStoreExtract (instance method)">- (Object) <strong>updateInsightDataStoreExtract</strong>(insightID, dataStoreID, extractID, data) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>updateInsightDataStoreExtract(insightID, dataStoreID, extractID, data)
+Updates Insight DataStore Extract In Server Workspace Needed In Reporter
+Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#updateInsightReport-instance_method" title="#updateInsightReport (instance method)">- (Object) <strong>updateInsightReport</strong>(insightID, reportID, data) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>updateInsightReport(insightID, reportID, data) Updates Insight Report In
+Server Workspace Needed In Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#updateInsightReportCard-instance_method" title="#updateInsightReportCard (instance method)">- (Object) <strong>updateInsightReportCard</strong>(insightID, reportID, cardID, data) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>updateInsightReportCard(insightID, reportID, cardID, data) Updates Insight
+Report Card In Server Workspace Needed In Reporter Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#updateInsightReportKeyMetric-instance_method" title="#updateInsightReportKeyMetric (instance method)">- (Object) <strong>updateInsightReportKeyMetric</strong>(insightID, reportID, keyMetricID, data) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>updateInsightReportKeyMetric(insightID, reportID, keyMetricID, data)
+Updates Insight Report KeyMetric In Server Workspace Needed In Reporter
+Plugins.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Util.html" title="Util (module)">Util</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Util.html#getJSONArgs-class_method" title="Util.getJSONArgs (method)">getJSONArgs</a></span>, <span class='object_link'><a href="Util.html#log-class_method" title="Util.log (method)">log</a></span>, <span class='object_link'><a href="Util.html#logClose-class_method" title="Util.logClose (method)">logClose</a></span>, <span class='object_link'><a href="Util.html#logInit-class_method" title="Util.logInit (method)">logInit</a></span>, <span class='object_link'><a href="Util.html#logIt-class_method" title="Util.logIt (method)">logIt</a></span>, <span class='object_link'><a href="Util.html#openJSONFile-class_method" title="Util.openJSONFile (method)">openJSONFile</a></span></p>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="createInsight-instance_method">
+  
+    - (<tt>Object</tt>) <strong>createInsight</strong>(insightName) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>createInsight(insightName) Creates An Insight space in Server Workspace
+Needed in Loader plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 56</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_createInsight'>createInsight</span><span class='lparen'>(</span><span class='id identifier rubyid_insightName'>insightName</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_insightName'>insightName</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_insightID'>insightID</span> <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_insightID'>insightID</span> <span class='op'>=</span> <span class='id identifier rubyid_getInsightID'>getInsightID</span><span class='lparen'>(</span><span class='id identifier rubyid_insightName'>insightName</span><span class='rparen'>)</span>
+    
+    <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Insight with name </span><span class='tstring_end'>&quot;</span></span><span class='op'>+</span><span class='id identifier rubyid_insightName'>insightName</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> already exists!</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_insightID'>insightID</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>       <span class='op'>=</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_insightName'>insightName</span><span class='rbrace'>}</span>
+      <span class='id identifier rubyid_insight'>insight</span> <span class='op'>=</span> <span class='id identifier rubyid_updateCloudmunchData'>updateCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+      
+      <span class='kw'>if</span> <span class='id identifier rubyid_insight'>insight</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+        <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Unable to create insight : </span><span class='tstring_end'>&quot;</span></span><span class='op'>+</span><span class='id identifier rubyid_insightName'>insightName</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>! refer log for more details</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+        <span class='kw'>return</span> <span class='kw'>nil</span>
+      <span class='kw'>else</span>
+        <span class='kw'>return</span> <span class='id identifier rubyid_insight'>insight</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Insights name is needed for creating an insight</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="createInsightDataStore-instance_method">
+  
+    - (<tt>Object</tt>) <strong>createInsightDataStore</strong>(insightID, dataStoreName) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>createInsightDataStore(insightID, dataStoreName) Creates An Insight
+DataStore in Server Workspace Needed in Loader plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 88</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_createInsightDataStore'>createInsightDataStore</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_dataStoreName'>dataStoreName</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_dataStoreName'>dataStoreName</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_dataStoreName'>dataStoreName</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_dataStoreID'>dataStoreID</span> <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_dataStoreID'>dataStoreID</span> <span class='op'>=</span> <span class='id identifier rubyid_getDataStoreID'>getDataStoreID</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_dataStoreName'>dataStoreName</span><span class='rparen'>)</span>
+    
+    <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_dataStoreID'>dataStoreID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Data store with name </span><span class='tstring_end'>&quot;</span></span><span class='op'>+</span><span class='id identifier rubyid_dataStoreName'>dataStoreName</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> already exists!</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_dataStoreID'>dataStoreID</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>datastores</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>       <span class='op'>=</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_dataStoreName'>dataStoreName</span><span class='rbrace'>}</span>
+      <span class='id identifier rubyid_dataStore'>dataStore</span> <span class='op'>=</span> <span class='id identifier rubyid_updateCloudmunchData'>updateCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+      
+      <span class='kw'>if</span> <span class='id identifier rubyid_dataStore'>dataStore</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+        <span class='kw'>return</span> <span class='kw'>nil</span>
+      <span class='kw'>else</span>
+        <span class='kw'>return</span> <span class='id identifier rubyid_dataStore'>dataStore</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Datastore name and insights id is needed for creating a data store</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="createInsightDataStoreExtract-instance_method">
+  
+    - (<tt>Object</tt>) <strong>createInsightDataStoreExtract</strong>(insightID, dataStoreID, extractName) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>createInsightDataStoreExtract(insightID, dataStoreID, extractName) Creates
+An Insight DataStore Extract in Server Workspace Needed In Loader Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 121</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_createInsightDataStoreExtract'>createInsightDataStoreExtract</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_dataStoreID'>dataStoreID</span><span class='comma'>,</span> <span class='id identifier rubyid_extractName'>extractName</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_extractName'>extractName</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_extractName'>extractName</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>  <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_dataStoreID'>dataStoreID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+    <span class='id identifier rubyid_extractID'>extractID</span> <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_extractID'>extractID</span> <span class='op'>=</span> <span class='id identifier rubyid_getExtractID'>getExtractID</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_dataStoreID'>dataStoreID</span><span class='comma'>,</span> <span class='id identifier rubyid_extractName'>extractName</span><span class='rparen'>)</span>
+    
+    <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_extractID'>extractID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_extractID'>extractID</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>      <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>datastores</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_dataStoreID'>dataStoreID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>extracts</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>         <span class='op'>=</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_extractName'>extractName</span><span class='rbrace'>}</span>
+
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Attempting creation of extract with name </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_extractName'>extractName</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>...</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_extract'>extract</span> <span class='op'>=</span> <span class='id identifier rubyid_updateCloudmunchData'>updateCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+
+      <span class='kw'>if</span> <span class='id identifier rubyid_extract'>extract</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='kw'>then</span> <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>else</span> <span class='id identifier rubyid_extract'>extract</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Extract name, insights id and datastore id is needed for creating an extract</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="createInsightReport-instance_method">
+  
+    - (<tt>Object</tt>) <strong>createInsightReport</strong>(insightID, reportName) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>createInsightReport(insightID, reportName) Creates An Insight Report in
+Server Workspace Needed In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 155</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_createInsightReport'>createInsightReport</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_reportName'>reportName</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_reportName'>reportName</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_reportName'>reportName</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+    <span class='id identifier rubyid_reportID'>reportID</span> <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_reportID'>reportID</span> <span class='op'>=</span> <span class='id identifier rubyid_getReportID'>getReportID</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_reportName'>reportName</span><span class='rparen'>)</span>
+    
+    <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_reportID'>reportID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_reportID'>reportID</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>     <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight_reports</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>        <span class='op'>=</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_reportName'>reportName</span><span class='rbrace'>}</span>
+
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Attempting creation of report with name </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_reportName'>reportName</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>...</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_report'>report</span> <span class='op'>=</span> <span class='id identifier rubyid_updateCloudmunchData'>updateCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+
+      <span class='kw'>if</span> <span class='id identifier rubyid_report'>report</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='kw'>then</span> <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>else</span> <span class='id identifier rubyid_report'>report</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Report name and insight id is needed for creating a report</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="createInsightReportCard-instance_method">
+  
+    - (<tt>Object</tt>) <strong>createInsightReportCard</strong>(insightID, reportID, cardName) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>createInsightReportCard(insightID, reportID, cardName) Creates An Insight
+Report Card in Server Workspace Needed In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 186</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_createInsightReportCard'>createInsightReportCard</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_reportID'>reportID</span><span class='comma'>,</span> <span class='id identifier rubyid_cardName'>cardName</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_cardName'>cardName</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_cardName'>cardName</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>  <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_reportID'>reportID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+    <span class='id identifier rubyid_cardID'>cardID</span> <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_cardID'>cardID</span> <span class='op'>=</span> <span class='id identifier rubyid_getReportCardID'>getReportCardID</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_reportID'>reportID</span><span class='comma'>,</span> <span class='id identifier rubyid_cardName'>cardName</span><span class='rparen'>)</span>
+    
+    <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_cardID'>cardID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_cardID'>cardID</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>      <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight_reports</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_reportID'>reportID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight_cards</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>         <span class='op'>=</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_cardName'>cardName</span><span class='rbrace'>}</span>
+
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Attempting creation of report card with name </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_cardName'>cardName</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>...</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_card'>card</span> <span class='op'>=</span> <span class='id identifier rubyid_updateCloudmunchData'>updateCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+
+      <span class='kw'>if</span> <span class='id identifier rubyid_card'>card</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='kw'>then</span> <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>else</span> <span class='id identifier rubyid_card'>card</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Extract name, insight id and report id is needed for creating a report card</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="createInsightReportKeyMetric-instance_method">
+  
+    - (<tt>Object</tt>) <strong>createInsightReportKeyMetric</strong>(insightID, reportID, keyMetricName) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>createInsightReportKeyMetric(insightID, reportID, keyMetricName) Creates An
+Insight Report Key Metric in Server Workspace Needed In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 221</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_createInsightReportKeyMetric'>createInsightReportKeyMetric</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_reportID'>reportID</span><span class='comma'>,</span> <span class='id identifier rubyid_keyMetricName'>keyMetricName</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_keyMetricName'>keyMetricName</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_keyMetricName'>keyMetricName</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>  <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_reportID'>reportID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+    <span class='id identifier rubyid_keyMetricID'>keyMetricID</span> <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_keyMetricID'>keyMetricID</span> <span class='op'>=</span> <span class='id identifier rubyid_getReportKeyMetricID'>getReportKeyMetricID</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_reportID'>reportID</span><span class='comma'>,</span> <span class='id identifier rubyid_keyMetricName'>keyMetricName</span><span class='rparen'>)</span>
+    
+    <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_keyMetricID'>keyMetricID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_keyMetricID'>keyMetricID</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>      <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight_reports</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_reportID'>reportID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight_cards</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>         <span class='op'>=</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_keyMetricName'>keyMetricName</span><span class='rbrace'>}</span>
+
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Attempting creation of report key metric with name </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_keyMetricName'>keyMetricName</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>...</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_keyMetric'>keyMetric</span> <span class='op'>=</span> <span class='id identifier rubyid_updateCloudmunchData'>updateCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+
+      <span class='kw'>if</span> <span class='id identifier rubyid_keyMetric'>keyMetric</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='kw'>then</span> <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>else</span> <span class='id identifier rubyid_keyMetric'>keyMetric</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Key metric name, insight id and report id is needed for creating a report key metric</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getDataStoreID-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getDataStoreID</strong>(insightID, dataStoreName) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getDataStoreID(insightID, dataStoreName) Gets DataStore ID for a given
+DataStore &lt;NOTE&gt;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 255</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getDataStoreID'>getDataStoreID</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_dataStoreName'>dataStoreName</span><span class='rparen'>)</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_dataStoreName'>dataStoreName</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight id and datastore name is needed to get datastore id</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>filter</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_dataStoreName'>dataStoreName</span><span class='rbrace'>}</span> 
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>count</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='int'>1</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>fields</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span> 
+
+    <span class='id identifier rubyid_dataStore'>dataStore</span> <span class='op'>=</span> <span class='id identifier rubyid_getInsightDataStores'>getInsightDataStores</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+    
+    <span class='kw'>if</span> <span class='id identifier rubyid_dataStore'>dataStore</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> 
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Data store with name </span><span class='tstring_end'>&quot;</span></span><span class='op'>+</span><span class='id identifier rubyid_dataStoreName'>dataStoreName</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> does not exist</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>elsif</span> <span class='lparen'>(</span><span class='id identifier rubyid_dataStore'>dataStore</span><span class='period'>.</span><span class='id identifier rubyid_kind_of?'>kind_of?</span><span class='lparen'>(</span><span class='const'>Array</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_dataStore'>dataStore</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>&gt;</span> <span class='int'>0</span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_dataStore'>dataStore</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Data store with name </span><span class='tstring_end'>&quot;</span></span><span class='op'>+</span><span class='id identifier rubyid_dataStoreName'>dataStoreName</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> does not exist</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getExtractID-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getExtractID</strong>(insightID, dataStoreID, extractName) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getExtractID(insightID, dataStoreID, extractName) Gets Extract ID for a
+given extract in a DataStore &lt;NOTE&gt;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 285</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getExtractID'>getExtractID</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_dataStoreID'>dataStoreID</span><span class='comma'>,</span> <span class='id identifier rubyid_extractName'>extractName</span><span class='rparen'>)</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_dataStoreID'>dataStoreID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_extractName'>extractName</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight id, datastore id and extract name is needed to get extract id</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_extract'>extract</span> <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>dataStoreID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_dataStoreID'>dataStoreID</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>filter</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_extractName'>extractName</span><span class='rbrace'>}</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>count</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='int'>1</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>fields</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span> 
+
+    <span class='id identifier rubyid_extract'>extract</span> <span class='op'>=</span> <span class='id identifier rubyid_getInsightDataStoreExtracts'>getInsightDataStoreExtracts</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_extract'>extract</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> 
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Extract with name </span><span class='tstring_end'>&quot;</span></span><span class='op'>+</span><span class='id identifier rubyid_extractName'>extractName</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> does not exist</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>elsif</span> <span class='lparen'>(</span><span class='id identifier rubyid_extract'>extract</span><span class='period'>.</span><span class='id identifier rubyid_kind_of?'>kind_of?</span><span class='lparen'>(</span><span class='const'>Array</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_extract'>extract</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>&gt;</span> <span class='int'>0</span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_extract'>extract</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Extract with name </span><span class='tstring_end'>&quot;</span></span><span class='op'>+</span><span class='id identifier rubyid_extractName'>extractName</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> does not exist</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getInsightDataStoreExtracts-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getInsightDataStoreExtracts</strong>(paramHash) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getInsightDataStoreExtracts(paramHash) Get Insight DataStore Extracts from
+Server Workspace Needed In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 450</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getInsightDataStoreExtracts'>getInsightDataStoreExtracts</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+  <span class='comment'># /insights/{insight_id}/datastores/{datastore_id}/extracts/{extract_id}
+</span>  <span class='id identifier rubyid_paramDataStoreId'>paramDataStoreId</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>dataStoreID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>dataStoreID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_paramInsightID'>paramInsightID</span>   <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_serverurl'>serverurl</span>   <span class='op'>=</span> <span class='kw'>nil</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span> <span class='op'>||</span> <span class='id identifier rubyid_paramDataStoreId'>paramDataStoreId</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_paramDataStoreId'>paramDataStoreId</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+    <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Insight id and datastore id is needed to gets its extract details</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>      <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>datastores</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>extracts</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_paramDataStoreId'>paramDataStoreId</span>
+  
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>extractID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>extractID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>return</span> <span class='id identifier rubyid_getCloudmunchData'>getCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getInsightDataStores-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getInsightDataStores</strong>(paramHash) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getInsightDataStores(paramHash) Get Insight DataStores from Server
+Workspace Needed In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 424</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getInsightDataStores'>getInsightDataStores</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+  <span class='comment'># /insights/{insight_id}/datastores/{datastore_id}
+</span>  <span class='id identifier rubyid_paramInsightID'>paramInsightID</span>  <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+    <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Insight id is not provided</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>datastores</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span>
+  
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>dataStoreID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>dataStoreID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_getCloudmunchData'>getCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='rparen'>)</span>          
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getInsightReportCards-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getInsightReportCards</strong>(paramHash) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getInsightReportCards(paramHash) Get Insight Report Cards from Server
+Workspace Needed In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+509
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 509</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getInsightReportCards'>getInsightReportCards</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+  <span class='comment'># /applications/{application_id}/insights/{insight_id}/insight_reports/{insight_report_id}/insight_cards/{insight_card_id}
+</span>  <span class='id identifier rubyid_paramReportId'>paramReportId</span>  <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reportID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reportID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_paramInsightID'>paramInsightID</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span> <span class='op'>||</span> <span class='id identifier rubyid_paramReportId'>paramReportId</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_paramReportId'>paramReportId</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+    <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Insight id and report id is needed to gets its report card details</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>      <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight_reports</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight_cards</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_paramReportId'>paramReportId</span>
+  
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>cardID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>cardID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>return</span> <span class='id identifier rubyid_getCloudmunchData'>getCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getInsightReportDataTemplateHash-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getInsightReportDataTemplateHash</strong>(reportTypeStr) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getInsightReportDataTemplateHash(reportTypeStr) Gets the data template Hash
+that needs to be filled in for a given report type Needed In Reporter
+Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+747
+748
+749</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 747</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getInsightReportDataTemplateHash'>getInsightReportDataTemplateHash</span><span class='lparen'>(</span><span class='id identifier rubyid_reportTypeStr'>reportTypeStr</span><span class='rparen'>)</span>
+
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getInsightReportKeyMetrics-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getInsightReportKeyMetrics</strong>(paramHash) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getInsightReportKeyMetrics(paramHash) Get Insight Report Key Metrics from
+Server Workspace Needed In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 539</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getInsightReportKeyMetrics'>getInsightReportKeyMetrics</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+  <span class='comment'># /applications/{application_id}/insights/{insight_id}/insight_reports/{insight_report_id}/key_metrics/{key_metric_id}
+</span>  <span class='id identifier rubyid_paramReportId'>paramReportId</span>  <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reportID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reportID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_paramInsightID'>paramInsightID</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span> <span class='op'>||</span> <span class='id identifier rubyid_paramReportId'>paramReportId</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_paramReportId'>paramReportId</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+    <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Insight id and report id is needed to gets its report key metric details</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>      <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight_reports</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>key_metrics</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_paramReportId'>paramReportId</span>
+  
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>keyMetricID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>keyMetricID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>return</span> <span class='id identifier rubyid_getCloudmunchData'>getCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getInsightReportMetaTemplateHash-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getInsightReportMetaTemplateHash</strong>(reportTypeStr) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getInsightReportMetaTemplateHash(reportTypeStr) Gets the meta template Hash
+that needs to be filled in for a given report type Needed In Reporter
+Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+756
+757
+758</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 756</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getInsightReportMetaTemplateHash'>getInsightReportMetaTemplateHash</span><span class='lparen'>(</span><span class='id identifier rubyid_reportTypeStr'>reportTypeStr</span><span class='rparen'>)</span>
+
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getInsightReports-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getInsightReports</strong>(paramHash) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getInsightReports(paramHash) Get Insight Reports from Server Workspace
+Needed In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+482
+483
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 482</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getInsightReports'>getInsightReports</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+  <span class='comment'># /applications/{application_id}/insights/{insight_id}/insight_reports/{insight_report_id}
+</span>  <span class='id identifier rubyid_paramInsightID'>paramInsightID</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+    <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Insight id is needed to gets its report details</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight_reports</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span>
+  
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reportID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reportID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>return</span> <span class='id identifier rubyid_getCloudmunchData'>getCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getInsightReportVisualizationMapTemplateHash-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getInsightReportVisualizationMapTemplateHash</strong>(reportTypeStr) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getInsightReportVisualizationMapTemplateHash(reportTypeStr) Gets the
+visualization map template Hash that needs to be filled in for a given
+report type Needed In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+765
+766
+767</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 765</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getInsightReportVisualizationMapTemplateHash'>getInsightReportVisualizationMapTemplateHash</span><span class='lparen'>(</span><span class='id identifier rubyid_reportTypeStr'>reportTypeStr</span><span class='rparen'>)</span>
+
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getInsights-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getInsights</strong>(paramHash) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getInsights(paramHash) Get Insights from Server Workspace Needed In
+Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 403</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getInsights'>getInsights</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+  <span class='comment'># /insights/{insight_id}
+</span>  <span class='id identifier rubyid_paraminsightID'>paraminsightID</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span> <span class='op'>=</span> <span class='id identifier rubyid_paramHash'>paramHash</span>
+  <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+  
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_paraminsightID'>paraminsightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_paraminsightID'>paraminsightID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+      <span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='id identifier rubyid_paramInsightID'>paramInsightID</span>
+  <span class='kw'>end</span>    
+
+  <span class='kw'>return</span> <span class='id identifier rubyid_getCloudmunchData'>getCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramFormatted'>paramFormatted</span><span class='rparen'>)</span>          
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getKeyMetricID-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getKeyMetricID</strong>(insightID, reportID, keyMetricName) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getKeyMetricID(insightID, reportID, keyMetricName) Gets Key Metric ID for a
+given report card &lt;NOTE&gt;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 381</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getKeyMetricID'>getKeyMetricID</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_reportID'>reportID</span><span class='comma'>,</span> <span class='id identifier rubyid_keyMetricName'>keyMetricName</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reportID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_reportID'>reportID</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>filter</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_keyMetricName'>keyMetricName</span><span class='rbrace'>}</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>count</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='int'>1</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>fields</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span> 
+
+    <span class='id identifier rubyid_keyMetric'>keyMetric</span> <span class='op'>=</span> <span class='id identifier rubyid_getInsightReportCards'>getInsightReportCards</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_keyMetric'>keyMetric</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='op'>!</span><span class='id identifier rubyid_keyMetric'>keyMetric</span><span class='period'>.</span><span class='id identifier rubyid_any?'>any?</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Report key metric with name </span><span class='tstring_end'>&quot;</span></span><span class='op'>+</span><span class='id identifier rubyid_keyMetricName'>keyMetricName</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> does not exist</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>else</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_keyMetric'>keyMetric</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getListOfDatesForADuration-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getListOfDatesForADuration</strong>(durationUnitNameStr, durationUnitNumber) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getListOfDatesForADuration(durationUnitNameStr, durationUnitNumber)
+durationUnitNameStr : days | weeks | months durationUnitNumber : Eg. 1 to N
+Get List(Array) of Dates (history) for a given duration from current day
+Needed In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+706
+707
+708
+709
+710
+711
+712
+713
+714
+715
+716
+717
+718
+719
+720
+721
+722
+723
+724
+725
+726
+727
+728
+729
+730
+731
+732
+733
+734
+735
+736
+737
+738
+739
+740</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 706</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getListOfDatesForADuration'>getListOfDatesForADuration</span><span class='lparen'>(</span><span class='id identifier rubyid_durationUnitNameStr'>durationUnitNameStr</span><span class='comma'>,</span> <span class='id identifier rubyid_durationUnitNumber'>durationUnitNumber</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>info</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid___method__'>__method__</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> method is invoked from InsightsGitHubOrgsReposWithSize</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='gvar'>$i</span> <span class='op'>=</span> <span class='int'>0</span>
+      <span class='id identifier rubyid_duration_arr'>duration_arr</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+      <span class='gvar'>$curr_date</span> <span class='op'>=</span> <span class='const'>Date</span><span class='period'>.</span><span class='id identifier rubyid_today'>today</span>
+      <span class='gvar'>$tmp_unit</span> <span class='op'>=</span> <span class='kw'>nil</span>
+      <span class='gvar'>$tmp_days_in_month</span> <span class='op'>=</span> <span class='kw'>nil</span>
+
+      <span class='kw'>case</span> <span class='id identifier rubyid_durationUnitNameStr'>durationUnitNameStr</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span>
+      <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>days</span><span class='tstring_end'>&quot;</span></span>
+          <span class='kw'>while</span> <span class='gvar'>$i</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_durationUnitNumber'>durationUnitNumber</span>
+              <span class='gvar'>$tmp_unit</span> <span class='op'>=</span> <span class='gvar'>$curr_date</span><span class='period'>.</span><span class='id identifier rubyid_strftime'>strftime</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%Y-%m-%d</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+              <span class='id identifier rubyid_duration_arr'>duration_arr</span><span class='lbracket'>[</span><span class='gvar'>$i</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='gvar'>$tmp_unit</span>
+              <span class='gvar'>$curr_date</span> <span class='op'>-=</span> <span class='int'>1</span>
+              <span class='gvar'>$i</span> <span class='op'>+=</span> <span class='int'>1</span>
+          <span class='kw'>end</span>
+      <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>weeks</span><span class='tstring_end'>&quot;</span></span>
+          <span class='kw'>while</span> <span class='gvar'>$i</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_durationUnitNumber'>durationUnitNumber</span>
+              <span class='gvar'>$tmp_unit</span> <span class='op'>=</span> <span class='gvar'>$curr_date</span><span class='period'>.</span><span class='id identifier rubyid_strftime'>strftime</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%Y-%m-%d</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+              <span class='id identifier rubyid_duration_arr'>duration_arr</span><span class='lbracket'>[</span><span class='gvar'>$i</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='gvar'>$tmp_unit</span>
+              <span class='gvar'>$curr_date</span> <span class='op'>-=</span> <span class='int'>7</span>
+              <span class='gvar'>$i</span> <span class='op'>+=</span> <span class='int'>1</span>
+          <span class='kw'>end</span>
+      <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>months</span><span class='tstring_end'>&quot;</span></span>
+          <span class='kw'>while</span> <span class='gvar'>$i</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_durationUnitNumber'>durationUnitNumber</span>
+              <span class='gvar'>$tmp_unit</span> <span class='op'>=</span> <span class='gvar'>$curr_date</span><span class='period'>.</span><span class='id identifier rubyid_strftime'>strftime</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%Y-%m-%d</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+              <span class='gvar'>$tmp_days_in_month</span> <span class='op'>=</span> <span class='gvar'>$curr_date</span><span class='period'>.</span><span class='id identifier rubyid_day'>day</span>
+              <span class='id identifier rubyid_duration_arr'>duration_arr</span><span class='lbracket'>[</span><span class='gvar'>$i</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='gvar'>$tmp_unit</span>
+              <span class='gvar'>$curr_date</span> <span class='op'>-=</span> <span class='gvar'>$tmp_days_in_month</span>
+              <span class='gvar'>$i</span> <span class='op'>+=</span> <span class='int'>1</span>
+          <span class='kw'>end</span>
+      <span class='kw'>end</span>
+
+      <span class='kw'>return</span> <span class='id identifier rubyid_duration_arr'>duration_arr</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getReportCardID-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getReportCardID</strong>(insightID, reportID, cardName) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getReportCardID(insightID, reportID, cardName) Gets Report Card ID for a
+given report card &lt;NOTE&gt;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 349</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getReportCardID'>getReportCardID</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_reportID'>reportID</span><span class='comma'>,</span> <span class='id identifier rubyid_cardName'>cardName</span><span class='rparen'>)</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_reportID'>reportID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_cardName'>cardName</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight id, report id and card name is needed to get report card id</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_card'>card</span> <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reportID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_reportID'>reportID</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>filter</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_cardName'>cardName</span><span class='rbrace'>}</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>count</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='int'>1</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>fields</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span> 
+
+    <span class='id identifier rubyid_card'>card</span> <span class='op'>=</span> <span class='id identifier rubyid_getInsightReportCards'>getInsightReportCards</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_card'>card</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> 
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Report with name </span><span class='tstring_end'>&quot;</span></span><span class='op'>+</span><span class='id identifier rubyid_cardName'>cardName</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> does not exist</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>elsif</span> <span class='lparen'>(</span><span class='id identifier rubyid_card'>card</span><span class='period'>.</span><span class='id identifier rubyid_kind_of?'>kind_of?</span><span class='lparen'>(</span><span class='const'>Array</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_card'>card</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>&gt;</span> <span class='int'>0</span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_card'>card</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Report with name </span><span class='tstring_end'>&quot;</span></span><span class='op'>+</span><span class='id identifier rubyid_cardName'>cardName</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> does not exist</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getReportID-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getReportID</strong>(insightID, reportName) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>getReportID(insightID, reportName) Gets Report ID for a given report
+&lt;NOTE&gt;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 317</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getReportID'>getReportID</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_reportName'>reportName</span><span class='rparen'>)</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_reportName'>reportName</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight id and report name is needed to get report id</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insightID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>filter</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_reportName'>reportName</span><span class='rbrace'>}</span> 
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>count</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='int'>1</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>fields</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span> 
+
+    <span class='id identifier rubyid_report'>report</span> <span class='op'>=</span> <span class='id identifier rubyid_getInsightReports'>getInsightReports</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> 
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Report with name </span><span class='tstring_end'>&quot;</span></span><span class='op'>+</span><span class='id identifier rubyid_reportName'>reportName</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> does not exist</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>elsif</span> <span class='lparen'>(</span><span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_kind_of?'>kind_of?</span><span class='lparen'>(</span><span class='const'>Array</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>&gt;</span> <span class='int'>0</span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_report'>report</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Report with name </span><span class='tstring_end'>&quot;</span></span><span class='op'>+</span><span class='id identifier rubyid_reportName'>reportName</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> does not exist</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="updateInsight-instance_method">
+  
+    - (<tt>Object</tt>) <strong>updateInsight</strong>(insightID, data) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>updateInsight(insightID, data) Updates Insight Into Server Workspace Needed
+In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+569
+570
+571
+572
+573
+574
+575
+576
+577
+578
+579
+580
+581
+582</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 569</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_updateInsight'>updateInsight</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+  <span class='comment'># /applications/{application_id}/insights/{insight_id}
+</span>
+  <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Insight id and data is needed to be update an existing data store</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>      <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_updateCloudmunchData'>updateCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="updateInsightDataStore-instance_method">
+  
+    - (<tt>Object</tt>) <strong>updateInsightDataStore</strong>(insightID, dataStoreID, data) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>updateInsightDataStore(insightID, dataStoreID, data) Updates Insight
+DataStore Into Server Workspace Needed In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+590
+591
+592
+593
+594
+595
+596
+597
+598
+599
+600
+601
+602
+603
+604</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 590</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_updateInsightDataStore'>updateInsightDataStore</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_dataStoreID'>dataStoreID</span><span class='comma'>,</span> <span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+  <span class='comment'># /applications/{application_id}/insights/{insight_id}/datastores/{datastore_id}
+</span>
+  <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_dataStoreID'>dataStoreID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_dataStoreID'>dataStoreID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Insight id, datastore id and data is needed to be update an existing data store</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>      <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>datastores</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_dataStoreID'>dataStoreID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>         <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_updateCloudmunchData'>updateCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="updateInsightDataStoreExtract-instance_method">
+  
+    - (<tt>Object</tt>) <strong>updateInsightDataStoreExtract</strong>(insightID, dataStoreID, extractID, data) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>updateInsightDataStoreExtract(insightID, dataStoreID, extractID, data)
+Updates Insight DataStore Extract In Server Workspace Needed In Reporter
+Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+611
+612
+613
+614
+615
+616
+617
+618
+619
+620
+621
+622
+623
+624
+625
+626
+627</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 611</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_updateInsightDataStoreExtract'>updateInsightDataStoreExtract</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_dataStoreID'>dataStoreID</span><span class='comma'>,</span> <span class='id identifier rubyid_extractID'>extractID</span><span class='comma'>,</span> <span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+  <span class='comment'># /insights/{insight_id}/datastores/{datastore_id}/extracts/{extract_id}
+</span>
+  <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_dataStoreID'>dataStoreID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_dataStoreID'>dataStoreID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_extractID'>extractID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_extractID'>extractID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Insight id, datastore id, extract id and data is needed to be update an existing extract</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>       <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>     <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>datastores</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='id identifier rubyid_dataStoreID'>dataStoreID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>extracts</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_extractID'>extractID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>          <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_updateCloudmunchData'>updateCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="updateInsightReport-instance_method">
+  
+    - (<tt>Object</tt>) <strong>updateInsightReport</strong>(insightID, reportID, data) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>updateInsightReport(insightID, reportID, data) Updates Insight Report In
+Server Workspace Needed In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+634
+635
+636
+637
+638
+639
+640
+641
+642
+643
+644
+645
+646
+647
+648</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 634</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_updateInsightReport'>updateInsightReport</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_reportID'>reportID</span><span class='comma'>,</span> <span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+  <span class='comment'># /applications/{application_id}/insights/{insight_id}/insight_reports/{insight_report_id}
+</span>
+  <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_reportID'>reportID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_reportID'>reportID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Insight id, report id and data is needed to be update an existing report</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>      <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight_reports</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_reportID'>reportID</span>
+      <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>         <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span>
+      <span class='kw'>return</span> <span class='id identifier rubyid_updateCloudmunchData'>updateCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="updateInsightReportCard-instance_method">
+  
+    - (<tt>Object</tt>) <strong>updateInsightReportCard</strong>(insightID, reportID, cardID, data) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>updateInsightReportCard(insightID, reportID, cardID, data) Updates Insight
+Report Card In Server Workspace Needed In Reporter Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+656
+657
+658
+659
+660
+661
+662
+663
+664
+665
+666
+667
+668
+669
+670
+671
+672
+673</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 656</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_updateInsightReportCard'>updateInsightReportCard</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_reportID'>reportID</span><span class='comma'>,</span> <span class='id identifier rubyid_cardID'>cardID</span><span class='comma'>,</span> <span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+  <span class='comment'># /applications/{application_id}/insights/{insight_id}/insight_reports/{insight_report_id}/insight_cards/{insight_card_id}
+</span>
+  <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_reportID'>reportID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_reportID'>reportID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_cardID'>cardID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_cardID'>cardID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Insight id, report id, cardID and data is needed to be update an existing report card</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>       <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>     <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight_reports</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='id identifier rubyid_reportID'>reportID</span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight_cards</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_cardID'>cardID</span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>          <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_updateCloudmunchData'>updateCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="updateInsightReportKeyMetric-instance_method">
+  
+    - (<tt>Object</tt>) <strong>updateInsightReportKeyMetric</strong>(insightID, reportID, keyMetricID, data) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>updateInsightReportKeyMetric(insightID, reportID, keyMetricID, data)
+Updates Insight Report KeyMetric In Server Workspace Needed In Reporter
+Plugins</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+680
+681
+682
+683
+684
+685
+686
+687
+688
+689
+690
+691
+692
+693
+694
+695
+696
+697</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'InsightHelper.rb', line 680</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_updateInsightReportKeyMetric'>updateInsightReportKeyMetric</span><span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='comma'>,</span> <span class='id identifier rubyid_reportID'>reportID</span><span class='comma'>,</span> <span class='id identifier rubyid_keyMetricID'>keyMetricID</span><span class='comma'>,</span> <span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+  <span class='comment'># /applications/{application_id}/insights/{insight_id}/insight_reports/{insight_report_id}/key_metrics/{key_metric_id}
+</span>
+  <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_insightID'>insightID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_reportID'>reportID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_reportID'>reportID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_keyMetricID'>keyMetricID</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_keyMetricID'>keyMetricID</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Insight id, report id, keyMetricID and data is needed to be update an existing report key metric</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>       <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insights</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>     <span class='op'>=</span> <span class='id identifier rubyid_insightID'>insightID</span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>insight_reports</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='id identifier rubyid_reportID'>reportID</span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContext</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>key_metrics</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>leafContextID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_keyMetricID'>keyMetricID</span>
+  <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>          <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_updateCloudmunchData'>updateCloudmunchData</span><span class='lparen'>(</span><span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Mon Jan 11 14:09:52 2016 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,1062 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: AppAbstract
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!AppAbstract.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (A)</a> &raquo;
+    
+    
+    <span class="title">AppAbstract</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: AppAbstract
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">AppAbstract</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2"><span class='object_link'><a href="CloudmunchService.html" title="CloudmunchService (module)">CloudmunchService</a></span>, <span class='object_link'><a href="InsightHelper.html" title="InsightHelper (module)">InsightHelper</a></span>, <span class='object_link'><a href="Util.html" title="Util (module)">Util</a></span></dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">AppAbstract.rb<span class="defines">,<br />
+  PluginLoaderAbstract.rb,<br /> PluginReporterAbstract.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="config-classvariable" class="">@@config =
+          
+        </dt>
+        <dd><pre class="code"><span class='kw'>nil</span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cleanupApp-instance_method" title="#cleanupApp (instance method)">- (Object) <strong>cleanupApp</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createAppContext-instance_method" title="#createAppContext (instance method)">- (Object) <strong>createAppContext</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getAppContext-instance_method" title="#getAppContext (instance method)">- (Object) <strong>getAppContext</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getCloudmunchContext-instance_method" title="#getCloudmunchContext (instance method)">- (Object) <strong>getCloudmunchContext</strong>(context) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getCloudmunchService-instance_method" title="#getCloudmunchService (instance method)">- (Object) <strong>getCloudmunchService</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>def getCloudmunchContext(context)     begin         return @@<a
+href="http://context+"_context"">config</a>     rescue         return false
+end end.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getInsightHelper-instance_method" title="#getInsightHelper (instance method)">- (Object) <strong>getInsightHelper</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getIntegrationDetails-instance_method" title="#getIntegrationDetails (instance method)">- (Object) <strong>getIntegrationDetails</strong>(param = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getJSONArgs-instance_method" title="#getJSONArgs (instance method)">- (Object) <strong>getJSONArgs</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (AppAbstract) <strong>initialize</strong>(param = nil) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of AppAbstract.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initializeApp-instance_method" title="#initializeApp (instance method)">- (Object) <strong>initializeApp</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#log-instance_method" title="#log (instance method)">- (Object) <strong>log</strong>(level, logString) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#logClose-instance_method" title="#logClose (instance method)">- (Object) <strong>logClose</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#logInit-instance_method" title="#logInit (instance method)">- (Object) <strong>logInit</strong>(log_level) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#process-instance_method" title="#process (instance method)">- (Object) <strong>process</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#start-instance_method" title="#start (instance method)">- (Object) <strong>start</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Util.html" title="Util (module)">Util</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Util.html#getJSONArgs-class_method" title="Util.getJSONArgs (method)">getJSONArgs</a></span>, <span class='object_link'><a href="Util.html#log-class_method" title="Util.log (method)">log</a></span>, <span class='object_link'><a href="Util.html#logClose-class_method" title="Util.logClose (method)">logClose</a></span>, <span class='object_link'><a href="Util.html#logInit-class_method" title="Util.logInit (method)">logInit</a></span>, <span class='object_link'><a href="Util.html#logIt-class_method" title="Util.logIt (method)">logIt</a></span>, <span class='object_link'><a href="Util.html#openJSONFile-class_method" title="Util.openJSONFile (method)">openJSONFile</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="InsightHelper.html" title="InsightHelper (module)">InsightHelper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="InsightHelper.html#createInsight-instance_method" title="InsightHelper#createInsight (method)">#createInsight</a></span>, <span class='object_link'><a href="InsightHelper.html#createInsightDataStore-instance_method" title="InsightHelper#createInsightDataStore (method)">#createInsightDataStore</a></span>, <span class='object_link'><a href="InsightHelper.html#createInsightDataStoreExtract-instance_method" title="InsightHelper#createInsightDataStoreExtract (method)">#createInsightDataStoreExtract</a></span>, <span class='object_link'><a href="InsightHelper.html#createInsightReport-instance_method" title="InsightHelper#createInsightReport (method)">#createInsightReport</a></span>, <span class='object_link'><a href="InsightHelper.html#createInsightReportCard-instance_method" title="InsightHelper#createInsightReportCard (method)">#createInsightReportCard</a></span>, <span class='object_link'><a href="InsightHelper.html#createInsightReportKeyMetric-instance_method" title="InsightHelper#createInsightReportKeyMetric (method)">#createInsightReportKeyMetric</a></span>, <span class='object_link'><a href="InsightHelper.html#getDataStoreID-instance_method" title="InsightHelper#getDataStoreID (method)">#getDataStoreID</a></span>, <span class='object_link'><a href="InsightHelper.html#getExtractID-instance_method" title="InsightHelper#getExtractID (method)">#getExtractID</a></span>, <span class='object_link'><a href="InsightHelper.html#getInsightDataStoreExtracts-instance_method" title="InsightHelper#getInsightDataStoreExtracts (method)">#getInsightDataStoreExtracts</a></span>, <span class='object_link'><a href="InsightHelper.html#getInsightDataStores-instance_method" title="InsightHelper#getInsightDataStores (method)">#getInsightDataStores</a></span>, <span class='object_link'><a href="InsightHelper.html#getInsightReportCards-instance_method" title="InsightHelper#getInsightReportCards (method)">#getInsightReportCards</a></span>, <span class='object_link'><a href="InsightHelper.html#getInsightReportDataTemplateHash-instance_method" title="InsightHelper#getInsightReportDataTemplateHash (method)">#getInsightReportDataTemplateHash</a></span>, <span class='object_link'><a href="InsightHelper.html#getInsightReportKeyMetrics-instance_method" title="InsightHelper#getInsightReportKeyMetrics (method)">#getInsightReportKeyMetrics</a></span>, <span class='object_link'><a href="InsightHelper.html#getInsightReportMetaTemplateHash-instance_method" title="InsightHelper#getInsightReportMetaTemplateHash (method)">#getInsightReportMetaTemplateHash</a></span>, <span class='object_link'><a href="InsightHelper.html#getInsightReportVisualizationMapTemplateHash-instance_method" title="InsightHelper#getInsightReportVisualizationMapTemplateHash (method)">#getInsightReportVisualizationMapTemplateHash</a></span>, <span class='object_link'><a href="InsightHelper.html#getInsightReports-instance_method" title="InsightHelper#getInsightReports (method)">#getInsightReports</a></span>, <span class='object_link'><a href="InsightHelper.html#getInsights-instance_method" title="InsightHelper#getInsights (method)">#getInsights</a></span>, <span class='object_link'><a href="InsightHelper.html#getKeyMetricID-instance_method" title="InsightHelper#getKeyMetricID (method)">#getKeyMetricID</a></span>, <span class='object_link'><a href="InsightHelper.html#getListOfDatesForADuration-instance_method" title="InsightHelper#getListOfDatesForADuration (method)">#getListOfDatesForADuration</a></span>, <span class='object_link'><a href="InsightHelper.html#getReportCardID-instance_method" title="InsightHelper#getReportCardID (method)">#getReportCardID</a></span>, <span class='object_link'><a href="InsightHelper.html#getReportID-instance_method" title="InsightHelper#getReportID (method)">#getReportID</a></span>, <span class='object_link'><a href="InsightHelper.html#updateInsight-instance_method" title="InsightHelper#updateInsight (method)">#updateInsight</a></span>, <span class='object_link'><a href="InsightHelper.html#updateInsightDataStore-instance_method" title="InsightHelper#updateInsightDataStore (method)">#updateInsightDataStore</a></span>, <span class='object_link'><a href="InsightHelper.html#updateInsightDataStoreExtract-instance_method" title="InsightHelper#updateInsightDataStoreExtract (method)">#updateInsightDataStoreExtract</a></span>, <span class='object_link'><a href="InsightHelper.html#updateInsightReport-instance_method" title="InsightHelper#updateInsightReport (method)">#updateInsightReport</a></span>, <span class='object_link'><a href="InsightHelper.html#updateInsightReportCard-instance_method" title="InsightHelper#updateInsightReportCard (method)">#updateInsightReportCard</a></span>, <span class='object_link'><a href="InsightHelper.html#updateInsightReportKeyMetric-instance_method" title="InsightHelper#updateInsightReportKeyMetric (method)">#updateInsightReportKeyMetric</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="CloudmunchService.html" title="CloudmunchService (module)">CloudmunchService</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="CloudmunchService.html#deleteCloudmunchData-instance_method" title="CloudmunchService#deleteCloudmunchData (method)">#deleteCloudmunchData</a></span>, <span class='object_link'><a href="CloudmunchService.html#deleteKeys-instance_method" title="CloudmunchService#deleteKeys (method)">#deleteKeys</a></span>, <span class='object_link'><a href="CloudmunchService.html#downloadKeys-instance_method" title="CloudmunchService#downloadKeys (method)">#downloadKeys</a></span>, <span class='object_link'><a href="CloudmunchService.html#generateServerURL-instance_method" title="CloudmunchService#generateServerURL (method)">#generateServerURL</a></span>, <span class='object_link'><a href="CloudmunchService.html#getCloudmunchData-instance_method" title="CloudmunchService#getCloudmunchData (method)">#getCloudmunchData</a></span>, <span class='object_link'><a href="CloudmunchService.html#getCustomDataContext-class_method" title="CloudmunchService.getCustomDataContext (method)">getCustomDataContext</a></span>, <span class='object_link'><a href="CloudmunchService.html#getDataForContext-instance_method" title="CloudmunchService#getDataForContext (method)">#getDataForContext</a></span>, <span class='object_link'><a href="CloudmunchService.html#http_get-class_method" title="CloudmunchService.http_get (method)">http_get</a></span>, <span class='object_link'><a href="CloudmunchService.html#http_post-class_method" title="CloudmunchService.http_post (method)">http_post</a></span>, <span class='object_link'><a href="CloudmunchService.html#parseResponse-instance_method" title="CloudmunchService#parseResponse (method)">#parseResponse</a></span>, <span class='object_link'><a href="CloudmunchService.html#putCustomDataContext-class_method" title="CloudmunchService.putCustomDataContext (method)">putCustomDataContext</a></span>, <span class='object_link'><a href="CloudmunchService.html#updateCloudmunchData-instance_method" title="CloudmunchService#updateCloudmunchData (method)">#updateCloudmunchData</a></span>, <span class='object_link'><a href="CloudmunchService.html#updateDataForContext-instance_method" title="CloudmunchService#updateDataForContext (method)">#updateDataForContext</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="AppAbstract (class)">AppAbstract</a></span></tt>) <strong>initialize</strong>(param = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of AppAbstract</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 17</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_param'>param</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="cleanupApp-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cleanupApp</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+94
+95
+96</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 94</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cleanupApp'>cleanupApp</span><span class='lparen'>(</span><span class='rparen'>)</span>
+   <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>INFO</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nExiting app</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="createAppContext-instance_method">
+  
+    - (<tt>Object</tt>) <strong>createAppContext</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 56</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_createAppContext'>createAppContext</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='ivar'>@appContext</span> <span class='op'>=</span> <span class='const'>AppContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='ivar'>@var_input</span><span class='rparen'>)</span>        
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getAppContext-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getAppContext</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+60
+61
+62</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 60</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getAppContext'>getAppContext</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='ivar'>@appContext</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getCloudmunchContext-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getCloudmunchContext</strong>(context) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+63
+64
+65
+66
+67
+68
+69</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'PluginLoaderAbstract.rb', line 63</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getCloudmunchContext'>getCloudmunchContext</span><span class='lparen'>(</span><span class='id identifier rubyid_context'>context</span><span class='rparen'>)</span>
+    <span class='kw'>begin</span>
+        <span class='kw'>return</span> <span class='cvar'>@@config</span><span class='lbracket'>[</span><span class='id identifier rubyid_context'>context</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+    <span class='kw'>rescue</span>
+        <span class='kw'>return</span> <span class='kw'>false</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getCloudmunchService-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getCloudmunchService</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>def getCloudmunchContext(context)</p>
+
+<pre class="code ruby"><code class="ruby"><span class='kw'>begin</span>
+    <span class='kw'>return</span> <span class='cvar'>@@config</span><span class='lbracket'>[</span><span class='id identifier rubyid_context'>context</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_context</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+<span class='kw'>rescue</span>
+    <span class='kw'>return</span> <span class='kw'>false</span>
+<span class='kw'>end</span></code></pre>
+
+<p>end</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+72
+73
+74
+75</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 72</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getCloudmunchService'>getCloudmunchService</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='ivar'>@cloudmunchservice</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_extend'>extend</span><span class='lparen'>(</span><span class='const'>CloudmunchService</span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='ivar'>@cloudmunchservice</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getInsightHelper-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getInsightHelper</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+77
+78
+79
+80</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 77</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getInsightHelper'>getInsightHelper</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='ivar'>@insightHelper</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_extend'>extend</span><span class='lparen'>(</span><span class='const'>InsightHelper</span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='ivar'>@insightHelper</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getIntegrationDetails-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getIntegrationDetails</strong>(param = nil) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+82
+83
+84
+85
+86</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 82</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getIntegrationDetails'>getIntegrationDetails</span><span class='lparen'>(</span><span class='id identifier rubyid_param'>param</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_serviceProvider'>serviceProvider</span> <span class='op'>=</span> <span class='const'>ServiceProvider</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='ivar'>@json_input</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>providername</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_serviceProvider'>serviceProvider</span><span class='period'>.</span><span class='id identifier rubyid_load_data'>load_data</span><span class='lparen'>(</span><span class='ivar'>@integration_input</span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='id identifier rubyid_serviceProvider'>serviceProvider</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getJSONArgs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getJSONArgs</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 37</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getJSONArgs'>getJSONArgs</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_jsonin'>jsonin</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_varin'>varin</span><span class='op'>=</span><span class='kw'>nil</span>
+  <span class='id identifier rubyid_integrations'>integrations</span><span class='op'>=</span><span class='kw'>nil</span>
+  <span class='id identifier rubyid_loop'>loop</span> <span class='lbrace'>{</span> <span class='kw'>case</span> <span class='const'>ARGV</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span>
+      <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-jsoninput</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>then</span>  <span class='const'>ARGV</span><span class='period'>.</span><span class='id identifier rubyid_shift'>shift</span><span class='semicolon'>;</span> <span class='id identifier rubyid_jsonin'>jsonin</span> <span class='op'>=</span> <span class='const'>ARGV</span><span class='period'>.</span><span class='id identifier rubyid_shift'>shift</span>
+      <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-variables</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>then</span>  <span class='const'>ARGV</span><span class='period'>.</span><span class='id identifier rubyid_shift'>shift</span><span class='semicolon'>;</span> <span class='id identifier rubyid_varin'>varin</span> <span class='op'>=</span> <span class='const'>ARGV</span><span class='period'>.</span><span class='id identifier rubyid_shift'>shift</span>
+      <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-integrations</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>then</span>  <span class='const'>ARGV</span><span class='period'>.</span><span class='id identifier rubyid_shift'>shift</span><span class='semicolon'>;</span> <span class='id identifier rubyid_integrations'>integrations</span> <span class='op'>=</span> <span class='const'>ARGV</span><span class='period'>.</span><span class='id identifier rubyid_shift'>shift</span>
+
+      <span class='kw'>when</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^-</span><span class='regexp_end'>/</span></span> <span class='kw'>then</span>  <span class='id identifier rubyid_usage'>usage</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Unknown option: </span><span class='embexpr_beg'>#{</span><span class='const'>ARGV</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>else</span> <span class='kw'>break</span>
+  <span class='kw'>end</span><span class='semicolon'>;</span> <span class='rbrace'>}</span>
+    <span class='ivar'>@json_input</span> <span class='op'>=</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_load'>load</span><span class='lparen'>(</span><span class='id identifier rubyid_jsonin'>jsonin</span><span class='rparen'>)</span>
+    <span class='ivar'>@var_input</span> <span class='op'>=</span><span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_load'>load</span><span class='lparen'>(</span><span class='id identifier rubyid_varin'>varin</span><span class='rparen'>)</span>
+    <span class='ivar'>@integration_input</span><span class='op'>=</span><span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_load'>load</span><span class='lparen'>(</span><span class='id identifier rubyid_integrations'>integrations</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_createAppContext'>createAppContext</span><span class='lparen'>(</span><span class='rparen'>)</span><span class='semicolon'>;</span>
+    <span class='kw'>return</span> <span class='ivar'>@json_input</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="initializeApp-instance_method">
+  
+    - (<tt>Object</tt>) <strong>initializeApp</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88
+89</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 88</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initializeApp'>initializeApp</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="log-instance_method">
+  
+    - (<tt>Object</tt>) <strong>log</strong>(level, logString) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+25
+26
+27
+28
+29
+30</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 25</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='id identifier rubyid_level'>level</span><span class='comma'>,</span><span class='id identifier rubyid_logString'>logString</span><span class='rparen'>)</span>
+    <span class='kw'>if</span> <span class='ivar'>@logger</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+        <span class='id identifier rubyid_logInit'>logInit</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DEBUG</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>end</span>     
+    <span class='const'>Util</span><span class='period'>.</span><span class='id identifier rubyid_logIt'>logIt</span><span class='lparen'>(</span><span class='ivar'>@logger</span><span class='comma'>,</span> <span class='ivar'>@log_level</span><span class='comma'>,</span> <span class='id identifier rubyid_level'>level</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='comma'>,</span> <span class='id identifier rubyid_logString'>logString</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="logClose-instance_method">
+  
+    - (<tt>Object</tt>) <strong>logClose</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+33
+34
+35</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 33</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_logClose'>logClose</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='const'>Util</span><span class='period'>.</span><span class='id identifier rubyid_logClose'>logClose</span><span class='lparen'>(</span><span class='ivar'>@logger</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="logInit-instance_method">
+  
+    - (<tt>Object</tt>) <strong>logInit</strong>(log_level) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20
+21
+22
+23</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_logInit'>logInit</span><span class='lparen'>(</span><span class='id identifier rubyid_log_level'>log_level</span><span class='rparen'>)</span>
+    <span class='ivar'>@logger</span> <span class='op'>=</span> <span class='ivar'>@logger</span> <span class='op'>?</span> <span class='ivar'>@logger</span> <span class='op'>:</span> <span class='const'>Util</span><span class='period'>.</span><span class='id identifier rubyid_logInit'>logInit</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='ivar'>@log_level</span> <span class='op'>=</span> <span class='id identifier rubyid_log_level'>log_level</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="process-instance_method">
+  
+    - (<tt>Object</tt>) <strong>process</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+91
+92</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 91</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_process'>process</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="start-instance_method">
+  
+    - (<tt>Object</tt>) <strong>start</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+98
+99
+100
+101
+102</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'AppAbstract.rb', line 98</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_start'>start</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_initializeApp'>initializeApp</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_process'>process</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_cleanupApp'>cleanupApp</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Mon Jan 11 14:09:52 2016 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>
