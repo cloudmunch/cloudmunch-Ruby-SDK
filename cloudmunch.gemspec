@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cloudmunch_Ruby_sdk_v2/version'
+require 'cloudmunch_Ruby_sdk_v3/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "cloudmunch_sdk"
-  spec.version       = "1.0.0"
+  spec.name          = "cloudmunch_sdk_v3"
+  spec.version       = "3.0.0"
   spec.authors       = ["ganesan krishnamurthy", "syamk","rosmi"]
   spec.email         = ["syamk@cloudmunch.com"]
 

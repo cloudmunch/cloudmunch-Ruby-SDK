@@ -1,0 +1,809 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: RoleHelper
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!RoleHelper.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (R)</a> &raquo;
+    
+    
+    <span class="title">RoleHelper</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: RoleHelper
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">RoleHelper</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2"><span class='object_link'><a href="CloudmunchService.html" title="CloudmunchService (module)">CloudmunchService</a></span>, <span class='object_link'><a href="Util.html" title="Util (module)">Util</a></span></dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">RoleHelper.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#addRole-instance_method" title="#addRole (instance method)">- (Object) <strong>addRole</strong>(roleName, roleData) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>/**  *   * @param string $roleName Name of the role  * @param string
+$role_status Role status ,valid values are success,failed,in-progress  *
+@param array  $roleData Array of role properties  */.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#checkIfRoleExists-instance_method" title="#checkIfRoleExists (instance method)">- (Object) <strong>checkIfRoleExists</strong>(roleID) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>### ### Checks if Role exists in cloudmunch.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getExistingRoles-instance_method" title="#getExistingRoles (instance method)">- (Object) <strong>getExistingRoles</strong>(filterData) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>### ### ### @param  Json Object $filterdata In the format
+“filterfield”:“=value” ### @return json object roledetails ### ###.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getRole-instance_method" title="#getRole (instance method)">- (Object) <strong>getRole</strong>(roleID, filterData) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>### ### ### @param  String  $roleID ### @param  Json Object $filterdata In
+the format “filterfield”:“=value” ### @return json object roledetails ###
+###.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (RoleHelper) <strong>initialize</strong>(appContext) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of RoleHelper.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#isRoleNameUnique-instance_method" title="#isRoleNameUnique (instance method)">- (Object) <strong>isRoleNameUnique</strong>(existingRoles, roleName) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>### ###  Check if given name of the role is unique with existing ones ### 
+@param  string  roleName       :  name of the environment name to be
+created ###  @param  string  existingRoles  :  list of existing
+environments ###  @return boolean true if name is unique ###.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#updateRole-instance_method" title="#updateRole (instance method)">- (Object) <strong>updateRole</strong>(roleID, roleData) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>### ### ### @param String Role ID ### @param JsonObject Role Data ###.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Util.html" title="Util (module)">Util</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Util.html#getJSONArgs-class_method" title="Util.getJSONArgs (method)">getJSONArgs</a></span>, <span class='object_link'><a href="Util.html#log-class_method" title="Util.log (method)">log</a></span>, <span class='object_link'><a href="Util.html#logClose-class_method" title="Util.logClose (method)">logClose</a></span>, <span class='object_link'><a href="Util.html#logInit-class_method" title="Util.logInit (method)">logInit</a></span>, <span class='object_link'><a href="Util.html#logIt-class_method" title="Util.logIt (method)">logIt</a></span>, <span class='object_link'><a href="Util.html#openJSONFile-class_method" title="Util.openJSONFile (method)">openJSONFile</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="CloudmunchService.html" title="CloudmunchService (module)">CloudmunchService</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="CloudmunchService.html#deleteCloudmunchData-instance_method" title="CloudmunchService#deleteCloudmunchData (method)">#deleteCloudmunchData</a></span>, <span class='object_link'><a href="CloudmunchService.html#deleteKeys-instance_method" title="CloudmunchService#deleteKeys (method)">#deleteKeys</a></span>, <span class='object_link'><a href="CloudmunchService.html#downloadKeys-instance_method" title="CloudmunchService#downloadKeys (method)">#downloadKeys</a></span>, <span class='object_link'><a href="CloudmunchService.html#generateServerURL-instance_method" title="CloudmunchService#generateServerURL (method)">#generateServerURL</a></span>, <span class='object_link'><a href="CloudmunchService.html#getCloudmunchData-instance_method" title="CloudmunchService#getCloudmunchData (method)">#getCloudmunchData</a></span>, <span class='object_link'><a href="CloudmunchService.html#getCustomDataContext-class_method" title="CloudmunchService.getCustomDataContext (method)">getCustomDataContext</a></span>, <span class='object_link'><a href="CloudmunchService.html#getDataForContext-instance_method" title="CloudmunchService#getDataForContext (method)">#getDataForContext</a></span>, <span class='object_link'><a href="CloudmunchService.html#http_get-class_method" title="CloudmunchService.http_get (method)">http_get</a></span>, <span class='object_link'><a href="CloudmunchService.html#http_post-class_method" title="CloudmunchService.http_post (method)">http_post</a></span>, <span class='object_link'><a href="CloudmunchService.html#parseResponse-instance_method" title="CloudmunchService#parseResponse (method)">#parseResponse</a></span>, <span class='object_link'><a href="CloudmunchService.html#putCustomDataContext-class_method" title="CloudmunchService.putCustomDataContext (method)">putCustomDataContext</a></span>, <span class='object_link'><a href="CloudmunchService.html#updateCloudmunchData-instance_method" title="CloudmunchService#updateCloudmunchData (method)">#updateCloudmunchData</a></span>, <span class='object_link'><a href="CloudmunchService.html#updateDataForContext-instance_method" title="CloudmunchService#updateDataForContext (method)">#updateDataForContext</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="RoleHelper (class)">RoleHelper</a></span></tt>) <strong>initialize</strong>(appContext) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of RoleHelper</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+23
+24
+25
+26</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'RoleHelper.rb', line 23</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_appContext'>appContext</span><span class='rparen'>)</span>
+    <span class='ivar'>@appContext</span> <span class='op'>=</span> <span class='id identifier rubyid_appContext'>appContext</span>
+    <span class='ivar'>@cloudmunchDataService</span> <span class='op'>=</span> <span class='const'>CloudmunchService</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> 
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="addRole-instance_method">
+  
+    - (<tt>Object</tt>) <strong>addRole</strong>(roleName, roleData) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>/**</p>
+
+<pre class="code ruby"><code class="ruby">* 
+* @param string $roleName Name of the role
+* @param string $role_status Role status ,valid values are success,failed,in-progress
+* @param array  $roleData Array of role properties
+*/</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'RoleHelper.rb', line 110</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_addRole'>addRole</span><span class='lparen'>(</span><span class='id identifier rubyid_roleName'>roleName</span><span class='comma'>,</span> <span class='id identifier rubyid_roleData'>roleData</span><span class='rparen'>)</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_roleName'>roleName</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span> <span class='kw'>then</span>
+        <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ERROR</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Role name need to be provided</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> 
+        <span class='kw'>return</span> <span class='kw'>false</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_roleData'>roleData</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_roleName'>roleName</span>
+
+    <span class='id identifier rubyid_serverUrl'>serverUrl</span> <span class='op'>=</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getMasterURL'>getMasterURL</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/applications/</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getProject'>getProject</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/tiers/</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_retResult'>retResult</span> <span class='op'>=</span> <span class='ivar'>@cloudmunchDataService</span><span class='period'>.</span><span class='id identifier rubyid_updateDataForContext'>updateDataForContext</span><span class='lparen'>(</span><span class='id identifier rubyid_serverUrl'>serverUrl</span><span class='comma'>,</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getAPIKey'>getAPIKey</span><span class='lparen'>(</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id identifier rubyid_roleData'>roleData</span><span class='rparen'>)</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_retResult'>retResult</span> <span class='op'>==</span> <span class='kw'>nil</span> <span class='kw'>then</span> 
+        <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>else</span>
+        <span class='id identifier rubyid_retResult'>retResult</span> <span class='op'>=</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_retResult'>retResult</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_retData'>retData</span> <span class='op'>=</span> <span class='id identifier rubyid_retResult'>retResult</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_retData'>retData</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='kw'>then</span> 
+            <span class='kw'>return</span> <span class='kw'>nil</span>
+        <span class='kw'>else</span>
+            <span class='kw'>return</span> <span class='id identifier rubyid_retData'>retData</span>
+        <span class='kw'>end</span>
+    <span class='kw'>end</span>
+
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="checkIfRoleExists-instance_method">
+  
+    - (<tt>Object</tt>) <strong>checkIfRoleExists</strong>(roleID) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>### ### Checks if Role exists in cloudmunch. ### @param string $roleID ###
+@return boolean ###</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'RoleHelper.rb', line 150</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_checkIfRoleExists'>checkIfRoleExists</span><span class='lparen'>(</span><span class='id identifier rubyid_roleID'>roleID</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_serverUrl'>serverUrl</span> <span class='op'>=</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getMasterURL'>getMasterURL</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/applications/</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getProject'>getProject</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/tiers/</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_roleID'>roleID</span>
+
+    <span class='id identifier rubyid_roleResult'>roleResult</span> <span class='op'>=</span> <span class='ivar'>@cloudmunchDataService</span><span class='period'>.</span><span class='id identifier rubyid_getDataForContext'>getDataForContext</span><span class='lparen'>(</span><span class='id identifier rubyid_serverUrl'>serverUrl</span><span class='comma'>,</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getAPIKey'>getAPIKey</span><span class='lparen'>(</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_roleResult'>roleResult</span> <span class='op'>==</span> <span class='kw'>nil</span> <span class='kw'>then</span>  
+        <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>else</span>
+        <span class='id identifier rubyid_roleResult'>roleResult</span> <span class='op'>=</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_roleResult'>roleResult</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_roleData'>roleData</span> <span class='op'>=</span> <span class='id identifier rubyid_roleResult'>roleResult</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_roleData'>roleData</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='kw'>then</span>
+            <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ERROR</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Role does not exist</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> 
+            <span class='kw'>return</span> <span class='kw'>false</span>
+        <span class='kw'>else</span>
+            <span class='kw'>return</span> <span class='kw'>true</span>
+        <span class='kw'>end</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getExistingRoles-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getExistingRoles</strong>(filterData) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>### ### ### @param  Json Object $filterdata In the format
+“filterfield”:“=value” ### @return json object roledetails ### ###</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'RoleHelper.rb', line 49</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getExistingRoles'>getExistingRoles</span><span class='lparen'>(</span><span class='id identifier rubyid_filterData'>filterData</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+    <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_filterData'>filterData</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+        <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>filter</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_filterData'>filterData</span><span class='period'>.</span><span class='id identifier rubyid_to_json'>to_json</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_serverUrl'>serverUrl</span> <span class='op'>=</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getMasterURL'>getMasterURL</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/applications/</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getProject'>getProject</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/tiers</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_roleResult'>roleResult</span> <span class='op'>=</span> <span class='ivar'>@cloudmunchDataService</span><span class='period'>.</span><span class='id identifier rubyid_getDataForContext'>getDataForContext</span><span class='lparen'>(</span><span class='id identifier rubyid_serverUrl'>serverUrl</span><span class='comma'>,</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getAPIKey'>getAPIKey</span><span class='lparen'>(</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_roleResult'>roleResult</span> <span class='op'>==</span> <span class='kw'>nil</span> <span class='kw'>then</span> 
+        <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ERROR</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Unable to get data from cloudmunch</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> 
+        <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>else</span>
+        <span class='id identifier rubyid_roleResult'>roleResult</span> <span class='op'>=</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_roleResult'>roleResult</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_roleData'>roleData</span> <span class='op'>=</span> <span class='id identifier rubyid_roleResult'>roleResult</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_roleData'>roleData</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='kw'>then</span>
+            <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ERROR</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Role does not exist</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> 
+            <span class='kw'>return</span> <span class='kw'>nil</span>
+        <span class='kw'>else</span>
+            <span class='kw'>return</span> <span class='id identifier rubyid_roleData'>roleData</span>
+        <span class='kw'>end</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getRole-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getRole</strong>(roleID, filterData) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>### ### ### @param  String  $roleID ### @param  Json Object $filterdata In
+the format “filterfield”:“=value” ### @return json object roledetails ###
+###</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'RoleHelper.rb', line 80</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getRole'>getRole</span><span class='lparen'>(</span><span class='id identifier rubyid_roleID'>roleID</span><span class='comma'>,</span> <span class='id identifier rubyid_filterData'>filterData</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_paramHash'>paramHash</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+    <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_filterData'>filterData</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+        <span class='id identifier rubyid_paramHash'>paramHash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>filter</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_filterData'>filterData</span><span class='period'>.</span><span class='id identifier rubyid_to_json'>to_json</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_serverUrl'>serverUrl</span> <span class='op'>=</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getMasterURL'>getMasterURL</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/applications/</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getProject'>getProject</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/tiers/</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_roleID'>roleID</span>
+    <span class='id identifier rubyid_roleResult'>roleResult</span> <span class='op'>=</span> <span class='ivar'>@cloudmunchDataService</span><span class='period'>.</span><span class='id identifier rubyid_getDataForContext'>getDataForContext</span><span class='lparen'>(</span><span class='id identifier rubyid_serverUrl'>serverUrl</span><span class='comma'>,</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getAPIKey'>getAPIKey</span><span class='lparen'>(</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id identifier rubyid_paramHash'>paramHash</span><span class='rparen'>)</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_roleResult'>roleResult</span> <span class='op'>==</span> <span class='kw'>nil</span> <span class='kw'>then</span> 
+        <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ERROR</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Unable to get data from cloudmunch</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> 
+        <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>else</span>
+        <span class='id identifier rubyid_roleResult'>roleResult</span> <span class='op'>=</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_roleResult'>roleResult</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_roleData'>roleData</span> <span class='op'>=</span> <span class='id identifier rubyid_roleResult'>roleResult</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_roleData'>roleData</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='kw'>then</span>
+            <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ERROR</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Role does not exist</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> 
+            <span class='kw'>return</span> <span class='kw'>nil</span>
+        <span class='kw'>else</span>
+            <span class='kw'>return</span> <span class='id identifier rubyid_roleData'>roleData</span>
+        <span class='kw'>end</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="isRoleNameUnique-instance_method">
+  
+    - (<tt>Object</tt>) <strong>isRoleNameUnique</strong>(existingRoles, roleName) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>### ###  Check if given name of the role is unique with existing ones ### 
+@param  string  roleName       :  name of the environment name to be
+created ###  @param  string  existingRoles  :  list of existing
+environments ###  @return boolean true if name is unique ###</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+34
+35
+36
+37
+38
+39
+40
+41</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'RoleHelper.rb', line 34</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_isRoleNameUnique'>isRoleNameUnique</span><span class='lparen'>(</span><span class='id identifier rubyid_existingRoles'>existingRoles</span><span class='comma'>,</span> <span class='id identifier rubyid_roleName'>roleName</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_existingRoles'>existingRoles</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span><span class='id identifier rubyid_v'>v</span><span class='op'>|</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_v'>v</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='id identifier rubyid_roleName'>roleName</span> <span class='kw'>then</span>
+            <span class='kw'>return</span> <span class='kw'>false</span>
+        <span class='kw'>end</span>
+    <span class='kw'>end</span>
+    <span class='kw'>return</span> <span class='kw'>true</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="updateRole-instance_method">
+  
+    - (<tt>Object</tt>) <strong>updateRole</strong>(roleID, roleData) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>### ### ### @param String Role ID ### @param JsonObject Role Data ###</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+140
+141
+142
+143</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'RoleHelper.rb', line 140</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_updateRole'>updateRole</span><span class='lparen'>(</span><span class='id identifier rubyid_roleID'>roleID</span><span class='comma'>,</span> <span class='id identifier rubyid_roleData'>roleData</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_serverUrl'>serverUrl</span> <span class='op'>=</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getMasterURL'>getMasterURL</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/applications/</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getProject'>getProject</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/tiers/</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_roleID'>roleID</span>
+    <span class='ivar'>@cloudmunchDataService</span><span class='period'>.</span><span class='id identifier rubyid_updateDataForContext'>updateDataForContext</span><span class='lparen'>(</span><span class='id identifier rubyid_serverUrl'>serverUrl</span><span class='comma'>,</span> <span class='ivar'>@appContext</span><span class='period'>.</span><span class='id identifier rubyid_getAPIKey'>getAPIKey</span><span class='lparen'>(</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id identifier rubyid_roleData'>roleData</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Mon Jan 11 14:09:53 2016 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>
