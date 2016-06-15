@@ -32,7 +32,7 @@ module CloudmunchService
       paramHash = Hash.new
       paramHash["context"] = "resources"
       paramHash["filter"] = {"type" => type}
-      paramHash["fields"] = "id,integration_id,key_fields"
+      paramHash["fields"] = "id,integration_id,key_fields,application_id"
 
       resource = getCloudmunchData(paramHash)
 
@@ -187,6 +187,9 @@ module CloudmunchService
     else
         if !requestDetails['message'].nil?
           log("ERROR", requestDetails['message'])
+        end
+        if !requestDetails['request_id'].nil?
+          log("ERROR", "Request ID : "+requestDetails['request_id'])
         end
         return nil
     end
