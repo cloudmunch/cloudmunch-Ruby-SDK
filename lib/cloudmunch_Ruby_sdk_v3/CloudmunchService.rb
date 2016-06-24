@@ -236,6 +236,7 @@ module CloudmunchService
     queryString = ""
     
     if !appendQueryParams.nil?
+      queryString = queryString + "action=" + paramHash["action"].to_s + "&" if !paramHash["action"].nil?
       queryString = queryString + "filter=" + paramHash["filter"].to_json + "&" if !paramHash["filter"].nil?
       queryString = queryString + "file="   + paramHash["file"].to_s      + "&" if !paramHash["file"].nil?
       queryString = queryString + "fields=" + paramHash["fields"].to_s    + "&" if !paramHash["fields"].nil?
