@@ -117,9 +117,6 @@ module CloudmunchService
 
     uri = URI.parse(serverurl)              
     
-    log("DEBUG", "URI for get : ")
-    log("DEBUG", uri)          
-    
     responseJson = Net::HTTP.get(uri)
     
     parseResponse(responseJson)
@@ -138,10 +135,7 @@ module CloudmunchService
           return nil
       end
 
-      uri = URI.parse(serverurl)              
-      
-      log("DEBUG", "URI for "+method+" : ")
-      log("DEBUG", uri)          
+      uri = URI.parse(serverurl)                      
       
       if method.casecmp("post") == 0
         responseJson = Net::HTTP.post_form(uri,"data" => paramData.to_json)
@@ -246,6 +240,10 @@ module CloudmunchService
       queryString = queryString + "order_by=" + paramHash["orderBy"].to_s + "&" if !paramHash["orderBy"].nil?
       queryString = queryString + "group_by=" + paramHash["groupBy"].to_s + "&" if !paramHash["groupBy"].nil?
     end
+
+    serverUrlWithoutApiKey = serverurl+"?"+queryString
+    log("DEBUG", "Url :: #{serverUrlWithoutApiKey}")
+
     serverurl = serverurl+"?"+queryString+"apikey="+@appContext.get_data("{api_key}")
     return serverurl
   end

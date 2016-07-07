@@ -337,7 +337,7 @@ module InsightHelper
       log("DEBUG", "Report with name "+reportName+" does not exist")
       return nil
     end
-end
+  end
 
 
   
@@ -738,6 +738,8 @@ end
 
         return duration_arr
   end
+
+
 
   ###################################################################################
   #### getInsightReportDataTemplateHash(reportTypeStr)
