@@ -32,7 +32,7 @@ module CloudmunchService
       paramHash = Hash.new
       paramHash["context"] = "resources"
       paramHash["filter"] = {"type" => type}
-      paramHash["fields"] = "id,integration_id,key_fields,application_id"
+      paramHash["fields"] = "*"
 
       resource = getCloudmunchData(paramHash)
 
