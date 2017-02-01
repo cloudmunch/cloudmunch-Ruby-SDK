@@ -55,5 +55,24 @@ class AppContext
         @AppContextParams[keyname] 
     end     
 
+    def get_step_id()
+        stepDetails = get_data("stepdetails")
+        if stepDetails
+            details = JSON.parse(stepDetails)
+            stepID = details && details["id"] ? details["id"] : ''
+            return stepID
+        end
+        return ''
+    end
+
+    def get_reports_location()
+        stepDetails = get_data("stepdetails")
+        if stepDetails
+            details = JSON.parse(stepDetails)
+            stepID = details && details["reports_location"] ? details["reports_location"] : ''
+            return stepID
+        end
+        return ''
+    end
 
 end

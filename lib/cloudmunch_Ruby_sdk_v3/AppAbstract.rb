@@ -85,6 +85,39 @@ class AppAbstract
         return serviceProvider
     end
 
+    def outputPipelineVariables(variablesHash)
+        # check if variable key is surrounded by {} and add if not present
+        tmp = {}
+        variablesHash.each do |key, value|
+            matches = key.scan(/^{.+}$/i)
+            if matches.is_a?(Array) && matches.length == 0
+                key = "{" + key + "}"
+            end
+            tmp[key] = value
+        end
+        
+        variablesHash = tmp
+        fileLoc = @appContext.get_reports_location() + "/" + @appContext.get_step_id() + ".out"
+        varList = nil
+        
+        if File.exist?(fileLoc)
+            varList = File.read(fileLoc)
+        end
+        
+        if varList.nil? || (varList.is_a?(String) && varList.length == 0)
+            varList = variablesHash
+            varList = JSON.generate(variablesHash)
+            File.write(fileLoc, varList)
+        else
+            varList = JSON.parse(varList)
+            variablesHash.each do |key, value|
+                varList[key] = value
+            end
+            varList = JSON.generate(varList)
+            File.write(fileLoc, varList)
+        end
+    end
+
     def initializeApp()
     end
 

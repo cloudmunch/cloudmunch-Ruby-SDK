@@ -56,7 +56,7 @@ module CloudmunchService
 
         integration = getCloudmunchData(paramHash)
 
-        log("DEBUG",integration)
+#        log("DEBUG",integration)
         if integration.nil?
           return nil
         else
@@ -173,8 +173,8 @@ module CloudmunchService
     requestDetails = (JSON.load(responseJson))['request']
     responseData   = (JSON.load(responseJson))['data']
 
-    log("DEBUG", "Response : ")
-    log("DEBUG", responseJson)
+#    log("DEBUG", "Response : ")
+#    log("DEBUG", responseJson)
     
     if !requestDetails['status'].nil? && requestDetails['status'].casecmp('success') == 0    
         return responseData
