@@ -3,6 +3,7 @@
 require 'net/http'
 require 'cgi'
 require 'json'
+require 'openssl'
 
 require_relative "Util"
 
@@ -105,6 +106,22 @@ module CloudmunchService
     File.delete(fileName)
   end
 
+  def getCloudmunchDataBKUP(paramHash)
+    serverurl = nil
+    serverurl = generateServerURL(paramHash,true)
+
+    if serverurl.nil?
+        log("DEBUG", "Unable to generate server url")
+        log("ERROR", "Unable to get data from cloudmunch")    
+        return nil
+    end
+
+    uri = URI.parse(serverurl)              
+    responseJson = Net::HTTP.get(uri)
+    
+    parseResponse(responseJson)
+  end
+
   def getCloudmunchData(paramHash)
     serverurl = nil
     serverurl = generateServerURL(paramHash,true)
@@ -116,9 +133,13 @@ module CloudmunchService
     end
 
     uri = URI.parse(serverurl)              
-    
-    responseJson = Net::HTTP.get(uri)
-    
+    netHttp = Net::HTTP.new(uri.host, uri.port)
+    netHttp.read_timeout = 120
+    netHttp.use_ssl = true
+    netHttp.verify_mode = OpenSSL::SSL::VERIFY_NONE
+   
+    response = netHttp.request(Net::HTTP::Get.new(uri.request_uri))
+    responseJson = response.body
     parseResponse(responseJson)
   end
 
