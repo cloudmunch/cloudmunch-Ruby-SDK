@@ -12,6 +12,7 @@ module InsightHelper
   ### createInsight(insightName)
   ### createInsightDataStore(insightID, dataStoreName)
   ### createInsightDataStoreExtract(insightID, dataStoreID, extractName)
+  ### createInsightDataStoreExtractAndSaveData(insightID, dataStoreID, extractName, data)
   ### createInsightReport(insightID, reportName)
   ### createInsightReportCard(insightID, reportID, cardName)
   ### createInsightReportKeyMetric(insightID, reportID, keyMetricName)
@@ -143,6 +144,30 @@ module InsightHelper
     else
         log("DEBUG", "Extract name, insights id and datastore id is needed for creating an extract")
         return nil
+    end
+  end
+
+  ###################################################################################
+  #### createInsightDataStoreExtractAndSaveData(insightID, dataStoreID, extractName, data)
+  #### Creates An Insight DataStore Extract in Server Workspace and save the given data
+  #### Needed In Loader Plugins
+  ###################################################################################
+  def createInsightDataStoreExtractAndSaveData(insightID, dataStoreID, extractName, data)
+    if !extractName.nil? && !extractName.empty? && !insightID.nil?  && !dataStoreID.nil? && !data.nil?
+        paramHash = Hash.new
+        paramHash["context"]      = "resources"
+        paramHash["contextID"]    = insightID
+        paramHash["subContext"]   = "datastores"
+        paramHash["subContextID"] = dataStoreID
+        paramHash["leafContext"]  = "extracts"
+        paramHash["data"] = data
+        paramHash["data"]["name"] = extractName
+        
+        log("DEBUG", "Extract with name #{extractName} created and data is stored into it...")
+        return updateCloudmunchData(paramHash)
+    else
+      log("DEBUG", "Check if resourdID, dataStoreID, extractName and data are not nil...")
+      return nil
     end
   end
 
