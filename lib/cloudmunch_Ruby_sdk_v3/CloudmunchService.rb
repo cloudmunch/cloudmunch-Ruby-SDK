@@ -135,7 +135,7 @@ module CloudmunchService
     uri = URI.parse(serverurl)              
     netHttp = Net::HTTP.new(uri.host, uri.port)
     netHttp.read_timeout = 120
-    netHttp.use_ssl = true
+    # netHttp.use_ssl = true
     netHttp.verify_mode = OpenSSL::SSL::VERIFY_NONE
    
     response = netHttp.request(Net::HTTP::Get.new(uri.request_uri))
