@@ -167,7 +167,8 @@ module CloudmunchService
         paramData["method"] = "patch"
         responseJson = Net::HTTP.post_form(uri,"data" => paramData.to_json)
       elsif method.casecmp("put") == 0
-        #code for put
+        paramData["method"] = "put"
+        responseJson = Net::HTTP.post_form(uri,"data" => paramData.to_json)
       end
       return parseResponse(responseJson.body)      
   end
