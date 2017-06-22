@@ -656,7 +656,7 @@ module InsightHelper
   #### Updates Insight Report In Server Workspace
   #### Needed In Reporter Plugins
   ###################################################################################
-  def updateInsightReport(insightID, reportID, data)
+  def updateInsightReport(insightID, reportID, data, method = "POST")
     # /applications/{application_id}/insights/{insight_id}/insight_reports/{insight_report_id}
 
     if (insightID.nil? || insightID.empty?) && (reportID.nil? || reportID.empty?) && data.nil?
@@ -669,7 +669,7 @@ module InsightHelper
         paramHash["subContext"]   = "insight_reports"
         paramHash["subContextID"] = reportID
         paramHash["data"]         = data
-        return updateCloudmunchData(paramHash)
+        return updateCloudmunchData(paramHash, method)
   end
 
 
@@ -678,7 +678,7 @@ module InsightHelper
   #### Updates Insight Report Card In Server Workspace
   #### Needed In Reporter Plugins
   ###################################################################################
-  def updateInsightReportCard(insightID, reportID, cardID, data)
+  def updateInsightReportCard(insightID, reportID, cardID, data, method = "POST")
     # /applications/{application_id}/insights/{insight_id}/insight_reports/{insight_report_id}/insight_cards/{insight_card_id}
 
     if (insightID.nil? || insightID.empty?) && (reportID.nil? || reportID.empty?) && (cardID.nil? || cardID.empty?) && data.nil?
@@ -694,7 +694,7 @@ module InsightHelper
     paramHash["leafContext"]   = "insight_cards"
     paramHash["leafContextID"] = cardID
     paramHash["data"]          = data
-    return updateCloudmunchData(paramHash)
+    return updateCloudmunchData(paramHash, method)
   end
 
   ###################################################################################
@@ -702,7 +702,7 @@ module InsightHelper
   #### Updates Insight Report KeyMetric In Server Workspace
   #### Needed In Reporter Plugins
   ###################################################################################
-  def updateInsightReportKeyMetric(insightID, reportID, keyMetricID, data)
+  def updateInsightReportKeyMetric(insightID, reportID, keyMetricID, data, method = "POST")
     # /applications/{application_id}/insights/{insight_id}/insight_reports/{insight_report_id}/key_metrics/{key_metric_id}
 
     if (insightID.nil? || insightID.empty?) && (reportID.nil? || reportID.empty?) && (keyMetricID.nil? || keyMetricID.empty?) && data.nil?
@@ -718,7 +718,7 @@ module InsightHelper
     paramHash["leafContext"]   = "key_metrics"
     paramHash["leafContextID"] = keyMetricID
     paramHash["data"]          = data
-    return updateCloudmunchData(paramHash)
+    return updateCloudmunchData(paramHash, method)
   end
 
   ###################################################################################
